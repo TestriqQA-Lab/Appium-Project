@@ -23,6 +23,12 @@ public class Add_To_Cart_Page_Object extends AndroidActions{
 		PageFactory.initElements(new AppiumFieldDecorator(driver), this);
 	}
 	
+	@AndroidFindBy(accessibility = "View menu")
+	public WebElement viewMenu;
+	
+	@AndroidFindBy(uiAutomator = "new UiSelector().text(\"Catalog\")")
+	public WebElement catalogMenu;
+	
 	@AndroidFindBy(uiAutomator = "new UiSelector().resourceId(\"com.saucelabs.mydemoapp.android:id/productIV\").instance(0)")
 	public WebElement product;
 	
@@ -59,6 +65,15 @@ public class Add_To_Cart_Page_Object extends AndroidActions{
 	
 	@AndroidFindBy(id = "com.saucelabs.mydemoapp.android:id/securityCodeET")
 	public WebElement securityCode;
+	
+	@AndroidFindBy(accessibility = "Saves payment info and launches screen to review checkout data")
+	public WebElement reviewOrder;
+	
+	@AndroidFindBy(accessibility = "Completes the process of checkout")
+	public WebElement placeOrder;
+	
+	@AndroidFindBy(id = "com.saucelabs.mydemoapp.android:id/completeTV")
+	public WebElement orderPlaced;
 	
 	@AndroidFindBy(id = "com.saucelabs.mydemoapp.android:id/address1ET")
 	public WebElement address1;
@@ -97,6 +112,8 @@ public class Add_To_Cart_Page_Object extends AndroidActions{
 	}
 	
 	public void AddToCartWithoutlogin() {
+		viewMenu.click();
+		catalogMenu.click();
 		product.click();
 		increaseItemQuantity.click();
 		increaseItemQuantity.click();
@@ -147,6 +164,9 @@ public class Add_To_Cart_Page_Object extends AndroidActions{
 		securityCode.click();
 		securityCode.sendKeys(security);
 		super.hideKeyboard();
+		reviewOrder.click();
+		placeOrder.click();
+		
 	}
 	
 	public boolean verifyMyCartPage() {
@@ -163,6 +183,17 @@ public class Add_To_Cart_Page_Object extends AndroidActions{
 	public boolean verifyNoItem() {
 		boolean flag = true;
 		if(!verifyNoItemInCart.isDisplayed()) {
+			flag = false;
+		}
+		else {
+			flag = true;
+		}
+		return flag;
+	}
+	
+	public boolean orderPage() {
+		boolean flag = true;
+		if(!orderPlaced.isDisplayed()) {
 			flag = false;
 		}
 		else {

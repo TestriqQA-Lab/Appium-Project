@@ -10,7 +10,6 @@
         <methods>
           <include name="Teardown"/>
           <include name="startAppiumServerAndInitializeDriver"/>
-          <include name="tearDown"/>
           <include name="RemoveProductFromCart"/>
           <include name="configuration"/>
         </methods>

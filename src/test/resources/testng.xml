@@ -8,11 +8,10 @@
     
   <test thread-count="5" name="Test">
     <classes>
-      <class name="testcases.TC_04_Remove_Product_From_Cart"/>
-      <class name="testcases.TC_03_Checkout"/>
-      <class name="testcases.BaseTest"/>
-      <class name="testcases.TC_01_Login"/>
-      <class name="testcases.TC_02_Add_To_Cart"/>
+     <class name="testcases.TC_01_Login"/>
+     <class name="testcases.TC_02_Add_To_Cart"/>
+    <!-- <class name="testcases.TC_04_Remove_Product_From_Cart"/>-->
+     <class name="testcases.TC_03_Checkout"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

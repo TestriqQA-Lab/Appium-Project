@@ -17,10 +17,11 @@
       </class> <!-- testcases.TC_01_Login -->
       <class name="testcases.TC_02_Add_To_Cart">
         <methods>
+          <include name="WithLoginAddToCartAndCheckout"/>
           <include name="Teardown"/>
           <include name="startAppiumServerAndInitializeDriver"/>
           <include name="tearDown"/>
-          <include name="RemoveProductFromCart"/>
+          <include name="WithoutLoginAddToCart"/>
           <include name="configuration"/>
         </methods>
       </class> <!-- testcases.TC_02_Add_To_Cart -->

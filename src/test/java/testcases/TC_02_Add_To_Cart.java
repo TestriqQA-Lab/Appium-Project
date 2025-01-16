@@ -25,12 +25,6 @@ public class TC_02_Add_To_Cart extends BaseTest{
     }
 	
 	@Test(priority = 1)
-	public void WithoutLoginAddToCart() {
-		addToCart.AddToCartWithoutlogin();
-		Assert.assertTrue(addToCart.verifyMyCartPage());
-	}
-	
-	@Test(priority = 2)
 	public void WithLoginAddToCartAndCheckout() {
 		login.login("bod@example.com", "10203040");
 		AssertJUnit.assertTrue(login.verifyLoginSuccess());
@@ -38,6 +32,12 @@ public class TC_02_Add_To_Cart extends BaseTest{
 		Assert.assertTrue(addToCart.verifyMyCartPage());
 	  	login.logOut();
 	  	Assert.assertTrue(login.verifyLogOutSuccess());
+	}
+	
+	@Test(priority = 2)
+	public void WithoutLoginAddToCart() {
+		addToCart.AddToCartWithoutlogin();
+		Assert.assertTrue(addToCart.verifyMyCartPage());
 	}
 	
 	@Test(priority = 3)

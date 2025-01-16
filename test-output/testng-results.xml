@@ -2,84 +2,76 @@
 <testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-15T19:15:38 IST" name="Suite" finished-at="2025-01-15T19:17:58 IST" duration-ms="140068">
+  <suite started-at="2025-01-16T17:32:28 IST" name="Suite" finished-at="2025-01-16T17:34:53 IST" duration-ms="144371">
     <groups>
     </groups>
-    <test started-at="2025-01-15T19:15:38 IST" name="Test" finished-at="2025-01-15T19:17:58 IST" duration-ms="140068">
+    <test started-at="2025-01-16T17:32:28 IST" name="Test" finished-at="2025-01-16T17:34:53 IST" duration-ms="144371">
       <class name="testcases.TC_01_Login">
-        <test-method is-config="true" signature="startAppiumServerAndInitializeDriver()[pri:0, instance:testcases.TC_01_Login@2bec854f]" started-at="2025-01-15T19:15:38 IST" name="startAppiumServerAndInitializeDriver" finished-at="2025-01-15T19:15:45 IST" duration-ms="6631" status="PASS">
+        <test-method is-config="true" signature="startAppiumServerAndInitializeDriver()[pri:0, instance:testcases.TC_01_Login@4b2c5e02]" started-at="2025-01-16T17:32:28 IST" name="startAppiumServerAndInitializeDriver" finished-at="2025-01-16T17:32:36 IST" duration-ms="7891" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startAppiumServerAndInitializeDriver -->
-        <test-method is-config="true" signature="configuration()[pri:0, instance:testcases.TC_01_Login@2bec854f]" started-at="2025-01-15T19:15:45 IST" name="configuration" finished-at="2025-01-15T19:15:52 IST" duration-ms="7504" status="PASS">
+        <test-method is-config="true" signature="configuration()[pri:0, instance:testcases.TC_01_Login@4b2c5e02]" started-at="2025-01-16T17:32:36 IST" name="configuration" finished-at="2025-01-16T17:32:47 IST" duration-ms="11176" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configuration -->
-        <test-method signature="LogintoTheapp()[pri:1, instance:testcases.TC_01_Login@2bec854f]" started-at="2025-01-15T19:15:52 IST" name="LogintoTheapp" finished-at="2025-01-15T19:16:03 IST" duration-ms="11169" status="PASS">
+        <test-method signature="LogintoTheapp()[pri:1, instance:testcases.TC_01_Login@4b2c5e02]" started-at="2025-01-16T17:32:47 IST" name="LogintoTheapp" finished-at="2025-01-16T17:32:58 IST" duration-ms="10926" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LogintoTheapp -->
-        <test-method is-config="true" signature="Teardown()[pri:0, instance:testcases.TC_01_Login@2bec854f]" started-at="2025-01-15T19:16:03 IST" name="Teardown" finished-at="2025-01-15T19:16:04 IST" duration-ms="408" status="PASS">
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:testcases.TC_01_Login@4b2c5e02]" started-at="2025-01-16T17:32:58 IST" name="Teardown" finished-at="2025-01-16T17:32:59 IST" duration-ms="442" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Teardown -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC_01_Login@2bec854f]" started-at="2025-01-15T19:16:04 IST" name="tearDown" finished-at="2025-01-15T19:16:04 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
       </class> <!-- testcases.TC_01_Login -->
       <class name="testcases.TC_03_Checkout">
-        <test-method is-config="true" signature="startAppiumServerAndInitializeDriver()[pri:0, instance:testcases.TC_03_Checkout@6f3187b0]" started-at="2025-01-15T19:17:02 IST" name="startAppiumServerAndInitializeDriver" finished-at="2025-01-15T19:17:08 IST" duration-ms="6316" status="PASS">
+        <test-method is-config="true" signature="startAppiumServerAndInitializeDriver()[pri:0, instance:testcases.TC_03_Checkout@5e17553a]" started-at="2025-01-16T17:33:54 IST" name="startAppiumServerAndInitializeDriver" finished-at="2025-01-16T17:34:01 IST" duration-ms="6678" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startAppiumServerAndInitializeDriver -->
-        <test-method is-config="true" signature="configuration()[pri:0, instance:testcases.TC_03_Checkout@6f3187b0]" started-at="2025-01-15T19:17:08 IST" name="configuration" finished-at="2025-01-15T19:17:16 IST" duration-ms="7642" status="PASS">
+        <test-method is-config="true" signature="configuration()[pri:0, instance:testcases.TC_03_Checkout@5e17553a]" started-at="2025-01-16T17:34:01 IST" name="configuration" finished-at="2025-01-16T17:34:09 IST" duration-ms="8319" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configuration -->
-        <test-method signature="Checkout()[pri:1, instance:testcases.TC_03_Checkout@6f3187b0]" started-at="2025-01-15T19:17:16 IST" name="Checkout" finished-at="2025-01-15T19:17:58 IST" duration-ms="41439" status="PASS">
+        <test-method signature="Checkout()[pri:1, instance:testcases.TC_03_Checkout@5e17553a]" started-at="2025-01-16T17:34:09 IST" name="Checkout" finished-at="2025-01-16T17:34:52 IST" duration-ms="43408" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Checkout -->
-        <test-method is-config="true" signature="Teardown()[pri:0, instance:testcases.TC_03_Checkout@6f3187b0]" started-at="2025-01-15T19:17:58 IST" name="Teardown" finished-at="2025-01-15T19:17:58 IST" duration-ms="454" status="PASS">
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:testcases.TC_03_Checkout@5e17553a]" started-at="2025-01-16T17:34:52 IST" name="Teardown" finished-at="2025-01-16T17:34:53 IST" duration-ms="401" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Teardown -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC_03_Checkout@6f3187b0]" started-at="2025-01-15T19:17:58 IST" name="tearDown" finished-at="2025-01-15T19:17:58 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
       </class> <!-- testcases.TC_03_Checkout -->
       <class name="testcases.TC_02_Add_To_Cart">
-        <test-method is-config="true" signature="startAppiumServerAndInitializeDriver()[pri:0, instance:testcases.TC_02_Add_To_Cart@6dd7b5a3]" started-at="2025-01-15T19:16:04 IST" name="startAppiumServerAndInitializeDriver" finished-at="2025-01-15T19:16:10 IST" duration-ms="6402" status="PASS">
+        <test-method is-config="true" signature="startAppiumServerAndInitializeDriver()[pri:0, instance:testcases.TC_02_Add_To_Cart@3b5fad2d]" started-at="2025-01-16T17:32:59 IST" name="startAppiumServerAndInitializeDriver" finished-at="2025-01-16T17:33:06 IST" duration-ms="6920" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startAppiumServerAndInitializeDriver -->
-        <test-method is-config="true" signature="configuration()[pri:0, instance:testcases.TC_02_Add_To_Cart@6dd7b5a3]" started-at="2025-01-15T19:16:10 IST" name="configuration" finished-at="2025-01-15T19:16:18 IST" duration-ms="7764" status="PASS">
+        <test-method is-config="true" signature="configuration()[pri:0, instance:testcases.TC_02_Add_To_Cart@3b5fad2d]" started-at="2025-01-16T17:33:06 IST" name="configuration" finished-at="2025-01-16T17:33:14 IST" duration-ms="8078" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configuration -->
-        <test-method signature="WithoutLoginAddToCart()[pri:1, instance:testcases.TC_02_Add_To_Cart@6dd7b5a3]" started-at="2025-01-15T19:16:18 IST" name="WithoutLoginAddToCart" finished-at="2025-01-15T19:16:23 IST" duration-ms="5100" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- WithoutLoginAddToCart -->
-        <test-method signature="WithLoginAddToCartAndCheckout()[pri:2, instance:testcases.TC_02_Add_To_Cart@6dd7b5a3]" started-at="2025-01-15T19:16:23 IST" name="WithLoginAddToCartAndCheckout" finished-at="2025-01-15T19:16:38 IST" duration-ms="15326" status="PASS">
+        <test-method signature="WithLoginAddToCartAndCheckout()[pri:1, instance:testcases.TC_02_Add_To_Cart@3b5fad2d]" started-at="2025-01-16T17:33:14 IST" name="WithLoginAddToCartAndCheckout" finished-at="2025-01-16T17:33:29 IST" duration-ms="14795" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- WithLoginAddToCartAndCheckout -->
-        <test-method signature="RemoveProductFromCart()[pri:3, instance:testcases.TC_02_Add_To_Cart@6dd7b5a3]" started-at="2025-01-15T19:16:38 IST" name="RemoveProductFromCart" finished-at="2025-01-15T19:16:59 IST" duration-ms="21117" status="FAIL">
+        <test-method signature="WithoutLoginAddToCart()[pri:2, instance:testcases.TC_02_Add_To_Cart@3b5fad2d]" started-at="2025-01-16T17:33:29 IST" name="WithoutLoginAddToCart" finished-at="2025-01-16T17:33:35 IST" duration-ms="6341" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WithoutLoginAddToCart -->
+        <test-method signature="RemoveProductFromCart()[pri:3, instance:testcases.TC_02_Add_To_Cart@3b5fad2d]" started-at="2025-01-16T17:33:35 IST" name="RemoveProductFromCart" finished-at="2025-01-16T17:33:51 IST" duration-ms="16206" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Can't locate an element by this strategy: By.chained({AppiumBy.androidUIAutomator: new UiSelector().resourceId("com.saucelabs.mydemoapp.android:id/productIV").instance(0)})]]>
+              <![CDATA[Can't locate an element by this strategy: By.chained({AppiumBy.accessibilityId: Login Menu Item})]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({AppiumBy.androidUIAutomator: new UiSelector().resourceId("com.saucelabs.mydemoapp.android:id/productIV").instance(0)})
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({AppiumBy.accessibilityId: Login Menu Item})
 at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:166)
 at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.call(InterceptorOfASingleElement.java:75)
 at io.appium.java_client.proxy.Interceptor.intercept(Interceptor.java:78)
-at org.openqa.selenium.remote.RemoteWebElement$ByteBuddy$6ILulqFr.click(Unknown Source)
-at ecommerce.Project.Add_To_Cart_Page_Object.RemoveProductFromCart(Add_To_Cart_Page_Object.java:109)
-at testcases.TC_02_Add_To_Cart.RemoveProductFromCart(TC_02_Add_To_Cart.java:46)
+at org.openqa.selenium.remote.RemoteWebElement$ByteBuddy$3CfW5qdF.click(Unknown Source)
+at ecommerce.Project.Login_PageObject.login(Login_PageObject.java:53)
+at testcases.TC_02_Add_To_Cart.RemoveProductFromCart(TC_02_Add_To_Cart.java:45)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -106,13 +98,13 @@ at org.testng.TestNG.run(TestNG.java:1079)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@326706d (tried for 1 second(s) with 500 milliseconds interval)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@76eadc5a (tried for 1 second(s) with 500 milliseconds interval)
 at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:265)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
 at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:135)
 at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:160)
 ... 31 more
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({AppiumBy.androidUIAutomator: new UiSelector().resourceId("com.saucelabs.mydemoapp.android:id/productIV").instance(0)})
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({AppiumBy.accessibilityId: Login Menu Item})
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.27.0', revision: 'd6e718d134'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
@@ -138,14 +130,10 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RemoveProductFromCart -->
-        <test-method is-config="true" signature="Teardown()[pri:0, instance:testcases.TC_02_Add_To_Cart@6dd7b5a3]" started-at="2025-01-15T19:17:02 IST" name="Teardown" finished-at="2025-01-15T19:17:02 IST" duration-ms="558" status="PASS">
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:testcases.TC_02_Add_To_Cart@3b5fad2d]" started-at="2025-01-16T17:33:53 IST" name="Teardown" finished-at="2025-01-16T17:33:54 IST" duration-ms="429" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Teardown -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC_02_Add_To_Cart@6dd7b5a3]" started-at="2025-01-15T19:17:02 IST" name="tearDown" finished-at="2025-01-15T19:17:02 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
       </class> <!-- testcases.TC_02_Add_To_Cart -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->

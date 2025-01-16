@@ -49,12 +49,8 @@ public class BaseTest extends AppiumUtils {
     }
     
 	@AfterClass
-    public void tearDown() {
-        if (driver != null) {
-            driver.quit(); // Quit the driver
-        }
-        if (service != null) {
-            service.stop(); // Stop the Appium server
-        }
-    }
+	public void Teardown() throws InterruptedException {
+//		driver.close();
+		driver.quit();
+	}
 }

@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>G:\Automation Projects\testriq\testng.xml</span>
+                    <span>G:\Automation Projects\testriq\src\test\resources\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -158,21 +158,21 @@
                   <a name="RemoveProductFromCart">
                   </a> <!-- RemoveProductFromCart -->
                   <span class="method-name">RemoveProductFromCart</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.chained({AppiumBy.androidUIAutomator: new UiSelector().resourceId(&quot;com.saucelabs.mydemoapp.android:id/productIV&quot;).instance(0)})
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.chained({AppiumBy.accessibilityId: Login Menu Item})
 	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:166)
 	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.call(InterceptorOfASingleElement.java:75)
 	at io.appium.java_client.proxy.Interceptor.intercept(Interceptor.java:78)
-	at org.openqa.selenium.remote.RemoteWebElement$ByteBuddy$6ILulqFr.click(Unknown Source)
-	at ecommerce.Project.Add_To_Cart_Page_Object.RemoveProductFromCart(Add_To_Cart_Page_Object.java:109)
-	at testcases.TC_02_Add_To_Cart.RemoveProductFromCart(TC_02_Add_To_Cart.java:46)
+	at org.openqa.selenium.remote.RemoteWebElement$ByteBuddy$3CfW5qdF.click(Unknown Source)
+	at ecommerce.Project.Login_PageObject.login(Login_PageObject.java:53)
+	at testcases.TC_02_Add_To_Cart.RemoveProductFromCart(TC_02_Add_To_Cart.java:45)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@326706d (tried for 1 second(s) with 500 milliseconds interval)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@76eadc5a (tried for 1 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:265)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
 	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:135)
 	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:160)
 	... 31 more
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({AppiumBy.androidUIAutomator: new UiSelector().resourceId(&quot;com.saucelabs.mydemoapp.android:id/productIV&quot;).instance(0)})
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({AppiumBy.accessibilityId: Login Menu Item})
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
@@ -201,6 +201,21 @@ Driver info: driver.version: RemoteWebDriver
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
+              <span class="class-name">testcases.TC_03_Checkout</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Checkout">
+                  </a> <!-- Checkout -->
+                  <span class="method-name">Checkout</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">testcases.TC_02_Add_To_Cart</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -223,21 +238,6 @@ Driver info: driver.version: RemoteWebDriver
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">testcases.TC_03_Checkout</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="Checkout">
-                  </a> <!-- Checkout -->
-                  <span class="method-name">Checkout</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
               <span class="class-name">testcases.TC_01_Login</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -253,7 +253,7 @@ Driver info: driver.version: RemoteWebDriver
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">G:\Automation Projects\testriq\testng.xml</span>
+            <span class="header-content">G:\Automation Projects\testriq\src\test\resources\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -311,23 +311,23 @@ data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'Checkout')
 data.setCell(0, 2, 'testcases.TC_03_Checkout')
-data.setCell(0, 3, 41439);
+data.setCell(0, 3, 43408);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'RemoveProductFromCart')
 data.setCell(1, 2, 'testcases.TC_02_Add_To_Cart')
-data.setCell(1, 3, 21117);
+data.setCell(1, 3, 16206);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'WithLoginAddToCartAndCheckout')
 data.setCell(2, 2, 'testcases.TC_02_Add_To_Cart')
-data.setCell(2, 3, 15326);
+data.setCell(2, 3, 14795);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'LogintoTheapp')
 data.setCell(3, 2, 'testcases.TC_01_Login')
-data.setCell(3, 3, 11169);
+data.setCell(3, 3, 10926);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'WithoutLoginAddToCart')
 data.setCell(4, 2, 'testcases.TC_02_Add_To_Cart')
-data.setCell(4, 3, 5100);
+data.setCell(4, 3, 6341);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -365,75 +365,63 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
                 <span class="method-name">configuration</span>
-                <span class="method-start">6631 ms</span>
+                <span class="method-start">7892 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">LogintoTheapp</span>
-                <span class="method-start">14144 ms</span>
+                <span class="method-start">19081 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">Teardown</span>
-                <span class="method-start">25319 ms</span>
-              </div> <!-- configuration-class after -->
-              <div class="configuration-class after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">25728 ms</span>
+                <span class="method-start">30015 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.TC_02_Add_To_Cart</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">startAppiumServerAndInitializeDriver</span>
-                <span class="method-start">25731 ms</span>
+                <span class="method-start">30459 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
                 <span class="method-name">configuration</span>
-                <span class="method-start">32134 ms</span>
+                <span class="method-start">37379 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">WithoutLoginAddToCart</span>
-                <span class="method-start">39898 ms</span>
+                <span class="method-name">WithLoginAddToCartAndCheckout</span>
+                <span class="method-start">45458 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">WithLoginAddToCartAndCheckout</span>
-                <span class="method-start">45001 ms</span>
+                <span class="method-name">WithoutLoginAddToCart</span>
+                <span class="method-start">60256 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">RemoveProductFromCart</span>
-                <span class="method-start">60329 ms</span>
+                <span class="method-start">66600 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">Teardown</span>
-                <span class="method-start">83632 ms</span>
-              </div> <!-- configuration-class after -->
-              <div class="configuration-class after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">84190 ms</span>
+                <span class="method-start">85111 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.TC_03_Checkout</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">startAppiumServerAndInitializeDriver</span>
-                <span class="method-start">84191 ms</span>
+                <span class="method-start">85540 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
                 <span class="method-name">configuration</span>
-                <span class="method-start">90507 ms</span>
+                <span class="method-start">92218 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">Checkout</span>
-                <span class="method-start">98150 ms</span>
+                <span class="method-start">100538 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">Teardown</span>
-                <span class="method-start">139592 ms</span>
-              </div> <!-- configuration-class after -->
-              <div class="configuration-class after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">140046 ms</span>
+                <span class="method-start">143947 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
