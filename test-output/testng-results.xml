@@ -1,77 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
+<testng-results ignored="0" total="5" passed="3" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-16T17:32:28 IST" name="Suite" finished-at="2025-01-16T17:34:53 IST" duration-ms="144371">
+  <suite started-at="2025-01-16T19:01:38 IST" name="Suite" finished-at="2025-01-16T19:04:09 IST" duration-ms="150210">
     <groups>
     </groups>
-    <test started-at="2025-01-16T17:32:28 IST" name="Test" finished-at="2025-01-16T17:34:53 IST" duration-ms="144371">
-      <class name="testcases.TC_01_Login">
-        <test-method is-config="true" signature="startAppiumServerAndInitializeDriver()[pri:0, instance:testcases.TC_01_Login@4b2c5e02]" started-at="2025-01-16T17:32:28 IST" name="startAppiumServerAndInitializeDriver" finished-at="2025-01-16T17:32:36 IST" duration-ms="7891" status="PASS">
+    <test started-at="2025-01-16T19:01:38 IST" name="Test" finished-at="2025-01-16T19:04:09 IST" duration-ms="150210">
+      <class name="testcases.TC_04_Remove_Product_From_Cart">
+        <test-method is-config="true" signature="startAppiumServerAndInitializeDriver()[pri:0, instance:testcases.TC_04_Remove_Product_From_Cart@56dc1551]" started-at="2025-01-16T19:03:35 IST" name="startAppiumServerAndInitializeDriver" finished-at="2025-01-16T19:03:41 IST" duration-ms="6662" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startAppiumServerAndInitializeDriver -->
-        <test-method is-config="true" signature="configuration()[pri:0, instance:testcases.TC_01_Login@4b2c5e02]" started-at="2025-01-16T17:32:36 IST" name="configuration" finished-at="2025-01-16T17:32:47 IST" duration-ms="11176" status="PASS">
+        <test-method is-config="true" signature="configuration()[pri:0, instance:testcases.TC_04_Remove_Product_From_Cart@56dc1551]" started-at="2025-01-16T19:03:41 IST" name="configuration" finished-at="2025-01-16T19:03:49 IST" duration-ms="7731" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configuration -->
-        <test-method signature="LogintoTheapp()[pri:1, instance:testcases.TC_01_Login@4b2c5e02]" started-at="2025-01-16T17:32:47 IST" name="LogintoTheapp" finished-at="2025-01-16T17:32:58 IST" duration-ms="10926" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LogintoTheapp -->
-        <test-method is-config="true" signature="Teardown()[pri:0, instance:testcases.TC_01_Login@4b2c5e02]" started-at="2025-01-16T17:32:58 IST" name="Teardown" finished-at="2025-01-16T17:32:59 IST" duration-ms="442" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Teardown -->
-      </class> <!-- testcases.TC_01_Login -->
-      <class name="testcases.TC_03_Checkout">
-        <test-method is-config="true" signature="startAppiumServerAndInitializeDriver()[pri:0, instance:testcases.TC_03_Checkout@5e17553a]" started-at="2025-01-16T17:33:54 IST" name="startAppiumServerAndInitializeDriver" finished-at="2025-01-16T17:34:01 IST" duration-ms="6678" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startAppiumServerAndInitializeDriver -->
-        <test-method is-config="true" signature="configuration()[pri:0, instance:testcases.TC_03_Checkout@5e17553a]" started-at="2025-01-16T17:34:01 IST" name="configuration" finished-at="2025-01-16T17:34:09 IST" duration-ms="8319" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configuration -->
-        <test-method signature="Checkout()[pri:1, instance:testcases.TC_03_Checkout@5e17553a]" started-at="2025-01-16T17:34:09 IST" name="Checkout" finished-at="2025-01-16T17:34:52 IST" duration-ms="43408" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Checkout -->
-        <test-method is-config="true" signature="Teardown()[pri:0, instance:testcases.TC_03_Checkout@5e17553a]" started-at="2025-01-16T17:34:52 IST" name="Teardown" finished-at="2025-01-16T17:34:53 IST" duration-ms="401" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Teardown -->
-      </class> <!-- testcases.TC_03_Checkout -->
-      <class name="testcases.TC_02_Add_To_Cart">
-        <test-method is-config="true" signature="startAppiumServerAndInitializeDriver()[pri:0, instance:testcases.TC_02_Add_To_Cart@3b5fad2d]" started-at="2025-01-16T17:32:59 IST" name="startAppiumServerAndInitializeDriver" finished-at="2025-01-16T17:33:06 IST" duration-ms="6920" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startAppiumServerAndInitializeDriver -->
-        <test-method is-config="true" signature="configuration()[pri:0, instance:testcases.TC_02_Add_To_Cart@3b5fad2d]" started-at="2025-01-16T17:33:06 IST" name="configuration" finished-at="2025-01-16T17:33:14 IST" duration-ms="8078" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configuration -->
-        <test-method signature="WithLoginAddToCartAndCheckout()[pri:1, instance:testcases.TC_02_Add_To_Cart@3b5fad2d]" started-at="2025-01-16T17:33:14 IST" name="WithLoginAddToCartAndCheckout" finished-at="2025-01-16T17:33:29 IST" duration-ms="14795" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- WithLoginAddToCartAndCheckout -->
-        <test-method signature="WithoutLoginAddToCart()[pri:2, instance:testcases.TC_02_Add_To_Cart@3b5fad2d]" started-at="2025-01-16T17:33:29 IST" name="WithoutLoginAddToCart" finished-at="2025-01-16T17:33:35 IST" duration-ms="6341" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- WithoutLoginAddToCart -->
-        <test-method signature="RemoveProductFromCart()[pri:3, instance:testcases.TC_02_Add_To_Cart@3b5fad2d]" started-at="2025-01-16T17:33:35 IST" name="RemoveProductFromCart" finished-at="2025-01-16T17:33:51 IST" duration-ms="16206" status="FAIL">
+        <test-method signature="RemoveProductFromCart()[pri:1, instance:testcases.TC_04_Remove_Product_From_Cart@56dc1551]" started-at="2025-01-16T19:03:49 IST" name="RemoveProductFromCart" finished-at="2025-01-16T19:04:06 IST" duration-ms="16869" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Can't locate an element by this strategy: By.chained({AppiumBy.accessibilityId: Login Menu Item})]]>
+              <![CDATA[Can't locate an element by this strategy: By.chained({AppiumBy.id: com.saucelabs.mydemoapp.android:id/nameET})]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({AppiumBy.accessibilityId: Login Menu Item})
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({AppiumBy.id: com.saucelabs.mydemoapp.android:id/nameET})
 at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:166)
 at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.call(InterceptorOfASingleElement.java:75)
 at io.appium.java_client.proxy.Interceptor.intercept(Interceptor.java:78)
-at org.openqa.selenium.remote.RemoteWebElement$ByteBuddy$3CfW5qdF.click(Unknown Source)
-at ecommerce.Project.Login_PageObject.login(Login_PageObject.java:53)
-at testcases.TC_02_Add_To_Cart.RemoveProductFromCart(TC_02_Add_To_Cart.java:45)
+at org.openqa.selenium.remote.RemoteWebElement$ByteBuddy$mkzF62mJ.click(Unknown Source)
+at ecommerce.Project.Login_PageObject.login(Login_PageObject.java:54)
+at testcases.TC_04_Remove_Product_From_Cart.RemoveProductFromCart(TC_04_Remove_Product_From_Cart.java:30)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -98,13 +54,13 @@ at org.testng.TestNG.run(TestNG.java:1079)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@76eadc5a (tried for 1 second(s) with 500 milliseconds interval)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@42ac84a9 (tried for 1 second(s) with 500 milliseconds interval)
 at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:265)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
 at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:135)
 at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:160)
 ... 31 more
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({AppiumBy.accessibilityId: Login Menu Item})
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({AppiumBy.id: com.saucelabs.mydemoapp.android:id/nameET})
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.27.0', revision: 'd6e718d134'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
@@ -130,7 +86,132 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RemoveProductFromCart -->
-        <test-method is-config="true" signature="Teardown()[pri:0, instance:testcases.TC_02_Add_To_Cart@3b5fad2d]" started-at="2025-01-16T17:33:53 IST" name="Teardown" finished-at="2025-01-16T17:33:54 IST" duration-ms="429" status="PASS">
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:testcases.TC_04_Remove_Product_From_Cart@56dc1551]" started-at="2025-01-16T19:04:08 IST" name="Teardown" finished-at="2025-01-16T19:04:09 IST" duration-ms="464" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Teardown -->
+      </class> <!-- testcases.TC_04_Remove_Product_From_Cart -->
+      <class name="testcases.TC_01_Login">
+        <test-method is-config="true" signature="startAppiumServerAndInitializeDriver()[pri:0, instance:testcases.TC_01_Login@57a3e26a]" started-at="2025-01-16T19:01:38 IST" name="startAppiumServerAndInitializeDriver" finished-at="2025-01-16T19:01:48 IST" duration-ms="9196" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startAppiumServerAndInitializeDriver -->
+        <test-method is-config="true" signature="configuration()[pri:0, instance:testcases.TC_01_Login@57a3e26a]" started-at="2025-01-16T19:01:48 IST" name="configuration" finished-at="2025-01-16T19:01:57 IST" duration-ms="9219" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configuration -->
+        <test-method signature="LogintoTheapp()[pri:1, instance:testcases.TC_01_Login@57a3e26a]" started-at="2025-01-16T19:01:57 IST" name="LogintoTheapp" finished-at="2025-01-16T19:02:08 IST" duration-ms="10936" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LogintoTheapp -->
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:testcases.TC_01_Login@57a3e26a]" started-at="2025-01-16T19:02:08 IST" name="Teardown" finished-at="2025-01-16T19:02:08 IST" duration-ms="426" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Teardown -->
+      </class> <!-- testcases.TC_01_Login -->
+      <class name="testcases.TC_03_Checkout">
+        <test-method is-config="true" signature="startAppiumServerAndInitializeDriver()[pri:0, instance:testcases.TC_03_Checkout@3eb91815]" started-at="2025-01-16T19:02:45 IST" name="startAppiumServerAndInitializeDriver" finished-at="2025-01-16T19:02:51 IST" duration-ms="6326" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startAppiumServerAndInitializeDriver -->
+        <test-method is-config="true" signature="configuration()[pri:0, instance:testcases.TC_03_Checkout@3eb91815]" started-at="2025-01-16T19:02:51 IST" name="configuration" finished-at="2025-01-16T19:03:00 IST" duration-ms="8524" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configuration -->
+        <test-method signature="Checkout()[pri:1, instance:testcases.TC_03_Checkout@3eb91815]" started-at="2025-01-16T19:03:00 IST" name="Checkout" finished-at="2025-01-16T19:03:32 IST" duration-ms="32128" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Can't locate an element by this strategy: By.chained({AppiumBy.id: com.saucelabs.mydemoapp.android:id/address2ET})]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({AppiumBy.id: com.saucelabs.mydemoapp.android:id/address2ET})
+at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:166)
+at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.call(InterceptorOfASingleElement.java:75)
+at io.appium.java_client.proxy.Interceptor.intercept(Interceptor.java:78)
+at org.openqa.selenium.remote.RemoteWebElement$ByteBuddy$4y112mNL.sendKeys(Unknown Source)
+at ecommerce.Project.Add_To_Cart_Page_Object.Checkout(Add_To_Cart_Page_Object.java:143)
+at testcases.TC_03_Checkout.Checkout(TC_03_Checkout.java:33)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@47c163bb (tried for 1 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:265)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:135)
+at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:160)
+... 31 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({AppiumBy.id: com.saucelabs.mydemoapp.android:id/address2ET})
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: driver.version: RemoteWebDriver
+at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:53)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$findElement$1(AppiumElementLocator.java:160)
+at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:217)
+at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:210)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+... 33 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Checkout -->
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:testcases.TC_03_Checkout@3eb91815]" started-at="2025-01-16T19:03:34 IST" name="Teardown" finished-at="2025-01-16T19:03:35 IST" duration-ms="371" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Teardown -->
+      </class> <!-- testcases.TC_03_Checkout -->
+      <class name="testcases.TC_02_Add_To_Cart">
+        <test-method is-config="true" signature="startAppiumServerAndInitializeDriver()[pri:0, instance:testcases.TC_02_Add_To_Cart@5e17553a]" started-at="2025-01-16T19:02:08 IST" name="startAppiumServerAndInitializeDriver" finished-at="2025-01-16T19:02:15 IST" duration-ms="6656" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startAppiumServerAndInitializeDriver -->
+        <test-method is-config="true" signature="configuration()[pri:0, instance:testcases.TC_02_Add_To_Cart@5e17553a]" started-at="2025-01-16T19:02:15 IST" name="configuration" finished-at="2025-01-16T19:02:23 IST" duration-ms="8560" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configuration -->
+        <test-method signature="WithLoginAddToCartAndCheckout()[pri:1, instance:testcases.TC_02_Add_To_Cart@5e17553a]" started-at="2025-01-16T19:02:23 IST" name="WithLoginAddToCartAndCheckout" finished-at="2025-01-16T19:02:38 IST" duration-ms="14671" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WithLoginAddToCartAndCheckout -->
+        <test-method signature="WithoutLoginAddToCart()[pri:2, instance:testcases.TC_02_Add_To_Cart@5e17553a]" started-at="2025-01-16T19:02:38 IST" name="WithoutLoginAddToCart" finished-at="2025-01-16T19:02:44 IST" duration-ms="6292" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WithoutLoginAddToCart -->
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:testcases.TC_02_Add_To_Cart@5e17553a]" started-at="2025-01-16T19:02:44 IST" name="Teardown" finished-at="2025-01-16T19:02:45 IST" duration-ms="403" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Teardown -->

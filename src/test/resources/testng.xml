@@ -10,8 +10,8 @@
     <classes>
      <class name="testcases.TC_01_Login"/>
      <class name="testcases.TC_02_Add_To_Cart"/>
-    <!-- <class name="testcases.TC_04_Remove_Product_From_Cart"/>-->
      <class name="testcases.TC_03_Checkout"/>
+     <class name="testcases.TC_04_Remove_Product_From_Cart"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
