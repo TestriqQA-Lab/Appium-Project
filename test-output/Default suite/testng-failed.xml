@@ -7,7 +7,7 @@
         <methods>
           <include name="Teardown"/>
           <include name="startAppiumServerAndInitializeDriver"/>
-          <include name="WithoutLoginAddToCart"/>
+          <include name="RemoveProductFromCart"/>
           <include name="configuration"/>
         </methods>
       </class> <!-- testcases.TC_02_Add_To_Cart -->

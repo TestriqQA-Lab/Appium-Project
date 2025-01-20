@@ -40,6 +40,15 @@ public class TC_02_Add_To_Cart extends BaseTest{
 		Assert.assertTrue(addToCart.verifyMyCartPage());
 	}
 
+	@Test(priority = 3)
+	public void RemoveProductFromCart() {
+		login.login("bod@example.com", "10203040");
+		addToCart.RemoveProductFromCart();
+		Assert.assertTrue(addToCart.verifyNoItem());
+	  	login.logOut();
+	  	Assert.assertTrue(login.verifyLogOutSuccess());
+	}
+	
 	@AfterClass
 	public void Teardown() throws InterruptedException {
 //		driver.close();

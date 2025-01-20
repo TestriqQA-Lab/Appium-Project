@@ -1,8 +1,11 @@
 package testcases;
 
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
+
 import java.io.IOException;
 import java.net.URISyntaxException;
 import org.testng.Assert;
@@ -12,7 +15,7 @@ public class TC_01_Login extends BaseTest {
 
     Login_PageObject login;
 
-    @BeforeClass
+    @BeforeMethod
     public void configuration() throws InterruptedException, IOException, URISyntaxException {
         // Start the Appium server and initialize the driver
         startAppiumServerAndInitializeDriver();
@@ -34,7 +37,7 @@ public class TC_01_Login extends BaseTest {
 //        login.logOut();
 //    }
 
-	@AfterClass
+	@AfterMethod
 	public void Teardown() throws InterruptedException {
 //		driver.close();
 		driver.quit();

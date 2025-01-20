@@ -128,6 +128,7 @@ public class Add_To_Cart_Page_Object extends AndroidActions{
 		addTocartButton.click();
 		addTocart.click();
 		removesProductFromCart.click();
+		
 	}
 	
 	public void Checkout(String name, String add1, String add2, String cityName, String stateName, String zipCode, String countryName) {
@@ -141,8 +142,10 @@ public class Add_To_Cart_Page_Object extends AndroidActions{
 		address1.sendKeys(add1);
 		address2.click();
 		address2.sendKeys(add2);
+		super.hideKeyboard();
 		city.click();
 		city.sendKeys(cityName);
+		super.hideKeyboard();
 		state.click();
 		state.sendKeys(stateName);
 		super.hideKeyboard();
