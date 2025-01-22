@@ -3,26 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-<<<<<<< HEAD
       <class name="testcases.TC_01_Login">
         <methods>
           <include name="startAppiumServerAndInitializeDriver"/>
           <include name="Teardown"/>
           <include name="LogintoTheapp"/>
-=======
-      <class name="testcases.TC_03_Checkout">
-        <methods>
-          <include name="Teardown"/>
->>>>>>> 35bb73d4c998bed77f81effd339389f177c7bbc3
           <include name="configuration"/>
-          <include name="startAppiumServerAndInitializeDriver"/>
-          <include name="Checkout"/>
         </methods>
-<<<<<<< HEAD
       </class> <!-- testcases.TC_01_Login -->
-=======
-      </class> <!-- testcases.TC_03_Checkout -->
->>>>>>> 35bb73d4c998bed77f81effd339389f177c7bbc3
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

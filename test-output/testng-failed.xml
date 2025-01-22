@@ -4,7 +4,7 @@
   <listeners>
     <listener class-name="AndroidUtils.Listeners"/>
   </listeners>
-  <test thread-count="5" name="Test2(failed)">
+  <test thread-count="5" name="Test(failed)">
     <classes>
       <class name="testcases.TC_02_Add_To_Cart">
         <methods>
@@ -13,7 +13,6 @@
           <include name="startAppiumServerAndInitializeDriver"/>
           <include name="WithoutLoginAddToCart"/>
           <include name="RemoveProductFromCart"/>
-          <include name="Checkout"/>
           <include name="configuration"/>
         </methods>
       </class> <!-- testcases.TC_02_Add_To_Cart -->
@@ -34,10 +33,5 @@
         </methods>
       </class> <!-- testcases.TC_03_Checkout -->
     </classes>
-<<<<<<< HEAD
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Appium Test Suite] -->
-=======
-  </test> <!-- Test2(failed) -->
-</suite> <!-- Failed suite [Suite] -->
->>>>>>> 35bb73d4c998bed77f81effd339389f177c7bbc3

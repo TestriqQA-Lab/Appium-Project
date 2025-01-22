@@ -1,31 +1,27 @@
 package testcases;
 
+import org.testng.annotations.BeforeClass;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
 import io.appium.java_client.service.local.AppiumServiceBuilder;
 import io.appium.java_client.android.options.UiAutomator2Options;
+import org.testng.annotations.AfterClass;
 import AndroidUtils.AppiumUtils;
 import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.BeforeTest;
-
 public class BaseTest extends AppiumUtils {
 
     public AndroidDriver driver;
     public AppiumDriverLocalService service;
-    
-    @BeforeTest
+
+    @BeforeClass
     public void startAppiumServerAndInitializeDriver() {
         try {
             // Start the Appium server
             service = new AppiumServiceBuilder()
-                    .withAppiumJS(new File("//usr//local//lib//node_modules//appium//build//lib//main.js"))
+                    .withAppiumJS(new File("C:\\Users\\Testriq\\AppData\\Roaming\\npm\\node_modules\\appium\\build\\lib\\main.js"))
                     .withIPAddress("127.0.0.1")
                     .usingPort(4723)
                     .build();
@@ -37,7 +33,7 @@ public class BaseTest extends AppiumUtils {
             // Configure desired capabilities
             UiAutomator2Options options = new UiAutomator2Options();
             options.setDeviceName("AndroidDeviceName"); // Replace with your actual device name
-            options.setApp("/Users/testriqqalab/eclipse-workspace/Appium-Project/src/main/java/apps/mda-2.2.0-25.apk"); // Replace with your app path
+            options.setApp("G:\\Automation Projects\\testriq\\src\\main\\java\\apps\\mda-2.2.0-25.apk"); // Replace with your app path
             options.setAppPackage("com.saucelabs.mydemoapp.android"); // Application package
             options.setAppActivity("com.saucelabs.mydemoapp.android.view.activities.SplashActivity"); // Main activity
             options.setCapability("autoGrantPermissions", true); // Auto grant permissions
@@ -53,7 +49,6 @@ public class BaseTest extends AppiumUtils {
             throw new RuntimeException("Failed to initialize Appium session. Check configurations.");
         }
     }
-<<<<<<< HEAD
 
     @AfterClass
     public void Teardown() throws InterruptedException {
@@ -64,14 +59,4 @@ public class BaseTest extends AppiumUtils {
             service.stop();
         }
     }
-=======
-    
-    @AfterTest
-	public void Teardown() throws InterruptedException {
-//		driver.close();
-    	if (service != null && service.isRunning()) {
-            service.stop();
-        }
-	}
->>>>>>> 35bb73d4c998bed77f81effd339389f177c7bbc3
 }

@@ -10,14 +10,14 @@ public class ExtentReport {
 
     public static ExtentReports getReporterObject() {
         // Ensure the reports directory exists
-        String reportDirPath = System.getProperty("user.dir") + "/reports";
+        String reportDirPath = System.getProperty("user.dir") + "\\reports";
         File reportDir = new File(reportDirPath);
         if (!reportDir.exists()) {
             reportDir.mkdirs();
         }
 
         // Add timestamp to make report file name unique for each run
-        String path = reportDirPath + "/" + "index.html";
+        String path = reportDirPath + "\\" + "index.html";
         ExtentSparkReporter reporter = new ExtentSparkReporter(path);
         reporter.config().setReportName("Mobile Automation Results");
         reporter.config().setDocumentTitle("Testriq QA LAB");

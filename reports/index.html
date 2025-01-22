@@ -35,11 +35,7 @@
 <a href="#"><span class="badge badge-primary">Mobile Automation Results</span></a>
 </li>
 <li class="m-r-10">
-<<<<<<< HEAD
 <a href="#"><span class="badge badge-primary">Jan 22, 2025 03:45:23 pm</span></a>
-=======
-<a href="#"><span class="badge badge-primary">Jan 22, 2025 03:32:21 pm</span></a>
->>>>>>> 35bb73d4c998bed77f81effd339389f177c7bbc3
 </li>
 </ul>
 </div>
@@ -49,6 +45,11 @@
 <li class="nav-item dropdown" onclick="toggleView('test-view')">
 <a id="nav-test" class="dropdown-toggle" href="#">
 <span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
 </a>
 </li>
 <li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
@@ -71,6 +72,7 @@
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
 <a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -85,30 +87,18 @@
           <div class="test-detail">
             <p class="name">CheckoutTest</p>
             <p class="text-sm">
-<<<<<<< HEAD
               <span>3:45:55 pm</span> / <span>00:00:59:813</span>
               <span class="badge fail-bg log float-right">Fail</span>
-=======
-              <span>3:32:38 pm</span> / <span>00:00:11:356</span>
-              <span class="badge pass-bg log float-right">Pass</span>
->>>>>>> 35bb73d4c998bed77f81effd339389f177c7bbc3
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<<<<<<< HEAD
 <h5 class="test-status text-fail">CheckoutTest</h5>
 <span class='badge badge-success'>01.22.2025 3:45:55 pm</span>
 <span class='badge badge-danger'>01.22.2025 3:46:55 pm</span>
 <span class='badge badge-default'>00:00:59:813</span>
-=======
-<h5 class="test-status text-pass">LogintoTheapp</h5>
-<span class='badge badge-success'>01.22.2025 3:32:38 pm</span>
-<span class='badge badge-danger'>01.22.2025 3:32:49 pm</span>
-<span class='badge badge-default'>00:00:11:356</span>
->>>>>>> 35bb73d4c998bed77f81effd339389f177c7bbc3
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -120,7 +110,6 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-<<<<<<< HEAD
         <td><span class="badge log fail-bg">Fail</span></td>
         <td>3:46:55 pm</td>
         <td>
@@ -185,135 +174,6 @@ Driver info: driver.version: RemoteWebDriver
 	... 33 more
 </textarea>
           
-=======
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:32:49 pm</td>
-        <td>
-          Test Passed
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="2"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">WithLoginAddToCartAndCheckout</p>
-            <p class="text-sm">
-              <span>3:33:01 pm</span> / <span>00:00:14:193</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">WithLoginAddToCartAndCheckout</h5>
-<span class='badge badge-success'>01.22.2025 3:33:01 pm</span>
-<span class='badge badge-danger'>01.22.2025 3:33:15 pm</span>
-<span class='badge badge-default'>00:00:14:193</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:33:15 pm</td>
-        <td>
-          Test Passed
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="3"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">WithoutLoginAddToCart</p>
-            <p class="text-sm">
-              <span>3:33:15 pm</span> / <span>00:00:05:594</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">WithoutLoginAddToCart</h5>
-<span class='badge badge-success'>01.22.2025 3:33:15 pm</span>
-<span class='badge badge-danger'>01.22.2025 3:33:21 pm</span>
-<span class='badge badge-default'>00:00:05:594</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:33:21 pm</td>
-        <td>
-          Test Passed
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="4"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">RemoveProductFromCart</p>
-            <p class="text-sm">
-              <span>3:33:21 pm</span> / <span>00:00:18:348</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">RemoveProductFromCart</h5>
-<span class='badge badge-success'>01.22.2025 3:33:21 pm</span>
-<span class='badge badge-danger'>01.22.2025 3:33:39 pm</span>
-<span class='badge badge-default'>00:00:18:348</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:33:39 pm</td>
-        <td>
-          Test Passed
->>>>>>> 35bb73d4c998bed77f81effd339389f177c7bbc3
         </td>
       </tr>
   </tbody>
@@ -328,11 +188,7 @@ Driver info: driver.version: RemoteWebDriver
           <div class="test-detail">
             <p class="name">LogintoTheapp</p>
             <p class="text-sm">
-<<<<<<< HEAD
               <span>3:47:20 pm</span> / <span>00:00:00:000</span>
-=======
-              <span>3:33:39 pm</span> / <span>00:00:46:007</span>
->>>>>>> 35bb73d4c998bed77f81effd339389f177c7bbc3
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -340,7 +196,6 @@ Driver info: driver.version: RemoteWebDriver
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<<<<<<< HEAD
 <h5 class="test-status text-pass">LogintoTheapp</h5>
 <span class='badge badge-success'>01.22.2025 3:47:20 pm</span>
 <span class='badge badge-danger'>01.22.2025 3:47:20 pm</span>
@@ -426,37 +281,13 @@ Driver info: driver.version: RemoteWebDriver
 <span class='badge badge-success'>01.22.2025 3:47:44 pm</span>
 <span class='badge badge-danger'>01.22.2025 3:47:44 pm</span>
 <span class='badge badge-default'>00:00:00:000</span>
-=======
-<h5 class="test-status text-pass">Checkout</h5>
-<span class='badge badge-success'>01.22.2025 3:33:39 pm</span>
-<span class='badge badge-danger'>01.22.2025 3:34:25 pm</span>
-<span class='badge badge-default'>00:00:46:007</span>
->>>>>>> 35bb73d4c998bed77f81effd339389f177c7bbc3
 &middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
 </div>
-<<<<<<< HEAD
 </div>          </div>
-=======
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:34:25 pm</td>
-        <td>
-          Test Passed
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
->>>>>>> 35bb73d4c998bed77f81effd339389f177c7bbc3
         </li>
       </ul>
     </div>
@@ -467,7 +298,6 @@ Driver info: driver.version: RemoteWebDriver
 </div>
 <div class="test-content-detail"><div class="detail-body"></div></div>
 </div></div>
-<<<<<<< HEAD
 <div class="test-wrapper row view exception-view attributes-view">
 <div class="test-list">
 <div class="test-list-tools">
@@ -518,40 +348,29 @@ Driver info: driver.version: RemoteWebDriver
 </div>
 </div>
 </div><div class="container-fluid p-4 view dashboard-view">
-=======
-<div class="container-fluid p-4 view dashboard-view">
->>>>>>> 35bb73d4c998bed77f81effd339389f177c7bbc3
 <div class="row">
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<<<<<<< HEAD
 <h3>Jan 22, 2025 03:45:23 pm</h3>
-=======
-<h3>Jan 22, 2025 03:32:21 pm</h3>
->>>>>>> 35bb73d4c998bed77f81effd339389f177c7bbc3
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<<<<<<< HEAD
 <h3>Jan 22, 2025 03:47:44 pm</h3>
-=======
-<h3>Jan 22, 2025 03:34:26 pm</h3>
->>>>>>> 35bb73d4c998bed77f81effd339389f177c7bbc3
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Tests Passed</p>
-<h3>5</h3>
+<h3>4</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Tests Failed</p>
-<h3>0</h3>
+<h3>1</h3>
 </div></div>
 </div>
 </div>
@@ -567,12 +386,12 @@ Driver info: driver.version: RemoteWebDriver
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'>
-<b>5</b> tests passed
+<div><small data-tooltip='80%'>
+<b>4</b> tests passed
 </small>
 </div>
 <div>
-<small data-tooltip='0%'><b>0</b> tests failed,
+<small data-tooltip='20%'><b>1</b> tests failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -590,15 +409,9 @@ Driver info: driver.version: RemoteWebDriver
 </div>
 </div>
 <div class="card-footer">
-<<<<<<< HEAD
 <div><small data-tooltip='0%'><b>0</b> events passed</small></div>
 <div>
 <small data-tooltip='100%'><b>1</b> events failed,
-=======
-<div><small data-tooltip='100%'><b>5</b> events passed</small></div>
-<div>
-<small data-tooltip='0%'><b>0</b> events failed,
->>>>>>> 35bb73d4c998bed77f81effd339389f177c7bbc3
 <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -615,11 +428,7 @@ Driver info: driver.version: RemoteWebDriver
 </div></div>
 <script>
 var timeline = {
-<<<<<<< HEAD
 "CheckoutTest":59.813,"LogintoTheapp":0,"WithLoginAddToCartAndCheckout":0,"WithoutLoginAddToCart":0,"RemoveProductFromCart":0
-=======
-"LogintoTheapp":11.356,"WithLoginAddToCartAndCheckout":14.193,"WithoutLoginAddToCart":5.594,"RemoveProductFromCart":18.348,"Checkout":46.007
->>>>>>> 35bb73d4c998bed77f81effd339389f177c7bbc3
 };
 </script>
 <div class="row">
@@ -658,8 +467,8 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 5,
-failParent: 0,
+passParent: 4,
+failParent: 1,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
@@ -675,13 +484,8 @@ warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
-<<<<<<< HEAD
 passEvents: 0,
 failEvents: 1,
-=======
-passEvents: 5,
-failEvents: 0,
->>>>>>> 35bb73d4c998bed77f81effd339389f177c7bbc3
 warningEvents: 0,
 skipEvents: 0,
 infoEvents: 0
