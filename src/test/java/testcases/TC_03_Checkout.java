@@ -1,8 +1,10 @@
 package testcases;
 
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -19,10 +21,9 @@ public class TC_03_Checkout extends BaseTest{
 	Add_To_Cart_Page_Object cardDetail;
 	Add_To_Cart_Page_Object checkOut;
 	
-	@BeforeTest
+	@BeforeClass
     public void configuration() throws InterruptedException, IOException, URISyntaxException {
         // Pass the apkPath parameter to the AppiumServer method
-		startAppiumServerAndInitializeDriver();
         login = new Login_PageObject(driver);
         addToCart = new Add_To_Cart_Page_Object (driver);
         cardDetail = new Add_To_Cart_Page_Object (driver);
@@ -40,7 +41,7 @@ public class TC_03_Checkout extends BaseTest{
 	  	Assert.assertTrue(login.verifyLogOutSuccess());
 	}
 
-	@AfterTest
+	@AfterClass
 	public void Teardown() throws InterruptedException {
 //		driver.close();
 		driver.quit();

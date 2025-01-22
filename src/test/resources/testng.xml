@@ -9,7 +9,7 @@
 			<class name="testcases.TC_01_Login" />
 		</classes>
 	</test> <!-- Test -->
-	<test name="Test2">
+	<test thread-count="2" name="Test2">
 		<classes>
 			<class name="testcases.TC_02_Add_To_Cart" />
 		</classes>

@@ -10,11 +10,18 @@ import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
 
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
+
 public class BaseTest extends AppiumUtils {
 
     public AndroidDriver driver;
     public AppiumDriverLocalService service;
     
+    @BeforeTest
     public void startAppiumServerAndInitializeDriver() {
         try {
             // Start the Appium server
@@ -45,8 +52,11 @@ public class BaseTest extends AppiumUtils {
         }
     }
     
+    @AfterTest
 	public void Teardown() throws InterruptedException {
 //		driver.close();
-		driver.quit();
+    	if (service != null && service.isRunning()) {
+            service.stop();
+        }
 	}
 }

@@ -4,15 +4,16 @@
   <listeners>
     <listener class-name="AndroidUtils.Listeners"/>
   </listeners>
-  <test thread-count="5" name="Test1(failed)">
+  <test thread-count="5" name="Test2(failed)">
     <classes>
-      <class name="testcases.TC_01_Login">
+      <class name="testcases.TC_03_Checkout">
         <methods>
           <include name="Teardown"/>
-          <include name="LogintoTheapp"/>
           <include name="configuration"/>
+          <include name="startAppiumServerAndInitializeDriver"/>
+          <include name="Checkout"/>
         </methods>
-      </class> <!-- testcases.TC_01_Login -->
+      </class> <!-- testcases.TC_03_Checkout -->
     </classes>
-  </test> <!-- Test1(failed) -->
+  </test> <!-- Test2(failed) -->
 </suite> <!-- Failed suite [Suite] -->
