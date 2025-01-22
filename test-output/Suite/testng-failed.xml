@@ -6,14 +6,17 @@
   </listeners>
   <test thread-count="5" name="Test2(failed)">
     <classes>
-      <class name="testcases.TC_03_Checkout">
+      <class name="testcases.TC_02_Add_To_Cart">
         <methods>
+          <include name="WithLoginAddToCartAndCheckout"/>
           <include name="Teardown"/>
-          <include name="configuration"/>
           <include name="startAppiumServerAndInitializeDriver"/>
+          <include name="WithoutLoginAddToCart"/>
+          <include name="RemoveProductFromCart"/>
           <include name="Checkout"/>
+          <include name="configuration"/>
         </methods>
-      </class> <!-- testcases.TC_03_Checkout -->
+      </class> <!-- testcases.TC_02_Add_To_Cart -->
     </classes>
   </test> <!-- Test2(failed) -->
 </suite> <!-- Failed suite [Suite] -->
