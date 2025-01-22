@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testcases.TC_02_Add_To_Cart">
+      <class name="testcases.TC_03_Checkout">
         <methods>
           <include name="Teardown"/>
-          <include name="startAppiumServerAndInitializeDriver"/>
-          <include name="RemoveProductFromCart"/>
           <include name="configuration"/>
+          <include name="startAppiumServerAndInitializeDriver"/>
+          <include name="Checkout"/>
         </methods>
-      </class> <!-- testcases.TC_02_Add_To_Cart -->
+      </class> <!-- testcases.TC_03_Checkout -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
