@@ -1,77 +1,162 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
+<<<<<<< HEAD
+<testng-results ignored="0" total="5" passed="0" failed="1" skipped="4">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-20T17:42:06 IST" name="Suite" finished-at="2025-01-20T17:44:34 IST" duration-ms="148147">
+  <suite started-at="2025-01-22T15:45:24 IST" name="Appium Test Suite" finished-at="2025-01-22T15:47:44 IST" duration-ms="140344">
     <groups>
     </groups>
-    <test started-at="2025-01-20T17:42:06 IST" name="Test" finished-at="2025-01-20T17:44:34 IST" duration-ms="148147">
+    <test started-at="2025-01-22T15:45:24 IST" name="Test" finished-at="2025-01-22T15:47:44 IST" duration-ms="140344">
       <class name="testcases.TC_01_Login">
-        <test-method is-config="true" signature="startAppiumServerAndInitializeDriver()[pri:0, instance:testcases.TC_01_Login@35a3d49f]" started-at="2025-01-20T17:42:06 IST" name="startAppiumServerAndInitializeDriver" finished-at="2025-01-20T17:42:18 IST" duration-ms="12076" status="PASS">
+        <test-method is-config="true" signature="startAppiumServerAndInitializeDriver()[pri:0, instance:testcases.TC_01_Login@51bd8b5c]" started-at="2025-01-22T15:46:55 IST" name="startAppiumServerAndInitializeDriver" finished-at="2025-01-22T15:47:08 IST" duration-ms="12133" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startAppiumServerAndInitializeDriver -->
-        <test-method is-config="true" signature="configuration()[pri:0, instance:testcases.TC_01_Login@35a3d49f]" started-at="2025-01-20T17:42:18 IST" name="configuration" finished-at="2025-01-20T17:42:27 IST" duration-ms="8850" status="PASS">
+        <test-method is-config="true" signature="configuration()[pri:0, instance:testcases.TC_01_Login@51bd8b5c]" started-at="2025-01-22T15:47:08 IST" name="configuration" finished-at="2025-01-22T15:47:20 IST" duration-ms="12230" status="FAIL">
+          <exception class="org.json.JSONException">
+            <message>
+              <![CDATA[JSONObject["email"] not found.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.json.JSONException: JSONObject["email"] not found.
+at org.json.JSONObject.get(JSONObject.java:570)
+at org.json.JSONObject.getString(JSONObject.java:857)
+at testcases.TC_01_Login.loadLoginCredentials(TC_01_Login.java:59)
+at testcases.TC_01_Login.configuration(TC_01_Login.java:27)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.json.JSONException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configuration -->
-        <test-method signature="LogintoTheapp()[pri:1, instance:testcases.TC_01_Login@35a3d49f]" started-at="2025-01-20T17:42:27 IST" name="LogintoTheapp" finished-at="2025-01-20T17:42:38 IST" duration-ms="11001" status="PASS">
+        <test-method signature="LogintoTheapp()[pri:1, instance:testcases.TC_01_Login@51bd8b5c]" started-at="2025-01-22T15:47:20 IST" name="LogintoTheapp" finished-at="2025-01-22T15:47:20 IST" duration-ms="0" status="SKIP">
+          <exception class="org.json.JSONException">
+            <message>
+              <![CDATA[JSONObject["email"] not found.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.json.JSONException: JSONObject["email"] not found.
+at org.json.JSONObject.get(JSONObject.java:570)
+at org.json.JSONObject.getString(JSONObject.java:857)
+at testcases.TC_01_Login.loadLoginCredentials(TC_01_Login.java:59)
+at testcases.TC_01_Login.configuration(TC_01_Login.java:27)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.json.JSONException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LogintoTheapp -->
-        <test-method is-config="true" signature="Teardown()[pri:0, instance:testcases.TC_01_Login@35a3d49f]" started-at="2025-01-20T17:42:38 IST" name="Teardown" finished-at="2025-01-20T17:42:38 IST" duration-ms="434" status="PASS">
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:testcases.TC_01_Login@51bd8b5c]" started-at="2025-01-22T15:47:20 IST" name="Teardown" finished-at="2025-01-22T15:47:20 IST" duration-ms="0" status="SKIP">
+=======
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-01-22T15:32:21 IST" name="Suite" finished-at="2025-01-22T15:34:26 IST" duration-ms="125591">
+    <groups>
+    </groups>
+    <test started-at="2025-01-22T15:32:21 IST" name="Test1" finished-at="2025-01-22T15:32:50 IST" duration-ms="28743">
+      <class name="testcases.TC_01_Login">
+        <test-method is-config="true" signature="startAppiumServerAndInitializeDriver()[pri:0, instance:testcases.TC_01_Login@28261e8e]" started-at="2025-01-22T15:32:21 IST" name="startAppiumServerAndInitializeDriver" finished-at="2025-01-22T15:32:37 IST" duration-ms="15741" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startAppiumServerAndInitializeDriver -->
+        <test-method is-config="true" signature="configuration()[pri:0, instance:testcases.TC_01_Login@28261e8e]" started-at="2025-01-22T15:32:37 IST" name="configuration" finished-at="2025-01-22T15:32:37 IST" duration-ms="935" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configuration -->
+        <test-method signature="LogintoTheapp()[pri:1, instance:testcases.TC_01_Login@28261e8e]" started-at="2025-01-22T15:32:38 IST" name="LogintoTheapp" finished-at="2025-01-22T15:32:49 IST" duration-ms="11361" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LogintoTheapp -->
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:testcases.TC_01_Login@28261e8e]" started-at="2025-01-22T15:32:49 IST" name="Teardown" finished-at="2025-01-22T15:32:50 IST" duration-ms="648" status="PASS">
+>>>>>>> 35bb73d4c998bed77f81effd339389f177c7bbc3
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Teardown -->
       </class> <!-- testcases.TC_01_Login -->
+<<<<<<< HEAD
       <class name="testcases.TC_03_Checkout">
-        <test-method is-config="true" signature="startAppiumServerAndInitializeDriver()[pri:0, instance:testcases.TC_03_Checkout@27912e3]" started-at="2025-01-20T17:43:36 IST" name="startAppiumServerAndInitializeDriver" finished-at="2025-01-20T17:43:42 IST" duration-ms="6714" status="PASS">
+        <test-method is-config="true" signature="startAppiumServerAndInitializeDriver()[pri:0, instance:testcases.TC_03_Checkout@35a3d49f]" started-at="2025-01-22T15:45:24 IST" name="startAppiumServerAndInitializeDriver" finished-at="2025-01-22T15:45:40 IST" duration-ms="16091" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startAppiumServerAndInitializeDriver -->
-        <test-method is-config="true" signature="configuration()[pri:0, instance:testcases.TC_03_Checkout@27912e3]" started-at="2025-01-20T17:43:42 IST" name="configuration" finished-at="2025-01-20T17:43:51 IST" duration-ms="8489" status="PASS">
+        <test-method is-config="true" signature="configuration()[pri:0, instance:testcases.TC_03_Checkout@35a3d49f]" started-at="2025-01-22T15:45:40 IST" name="configuration" finished-at="2025-01-22T15:45:55 IST" duration-ms="15017" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configuration -->
-        <test-method signature="Checkout()[pri:1, instance:testcases.TC_03_Checkout@27912e3]" started-at="2025-01-20T17:43:51 IST" name="Checkout" finished-at="2025-01-20T17:44:34 IST" duration-ms="42620" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Checkout -->
-        <test-method is-config="true" signature="Teardown()[pri:0, instance:testcases.TC_03_Checkout@27912e3]" started-at="2025-01-20T17:44:34 IST" name="Teardown" finished-at="2025-01-20T17:44:34 IST" duration-ms="418" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Teardown -->
-      </class> <!-- testcases.TC_03_Checkout -->
-      <class name="testcases.TC_02_Add_To_Cart">
-        <test-method is-config="true" signature="startAppiumServerAndInitializeDriver()[pri:0, instance:testcases.TC_02_Add_To_Cart@74f6c5d8]" started-at="2025-01-20T17:42:38 IST" name="startAppiumServerAndInitializeDriver" finished-at="2025-01-20T17:42:45 IST" duration-ms="6415" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startAppiumServerAndInitializeDriver -->
-        <test-method is-config="true" signature="configuration()[pri:0, instance:testcases.TC_02_Add_To_Cart@74f6c5d8]" started-at="2025-01-20T17:42:45 IST" name="configuration" finished-at="2025-01-20T17:42:53 IST" duration-ms="7938" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configuration -->
-        <test-method signature="WithLoginAddToCartAndCheckout()[pri:1, instance:testcases.TC_02_Add_To_Cart@74f6c5d8]" started-at="2025-01-20T17:42:53 IST" name="WithLoginAddToCartAndCheckout" finished-at="2025-01-20T17:43:08 IST" duration-ms="15626" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- WithLoginAddToCartAndCheckout -->
-        <test-method signature="WithoutLoginAddToCart()[pri:2, instance:testcases.TC_02_Add_To_Cart@74f6c5d8]" started-at="2025-01-20T17:43:08 IST" name="WithoutLoginAddToCart" finished-at="2025-01-20T17:43:14 IST" duration-ms="6255" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- WithoutLoginAddToCart -->
-        <test-method signature="RemoveProductFromCart()[pri:3, instance:testcases.TC_02_Add_To_Cart@74f6c5d8]" started-at="2025-01-20T17:43:14 IST" name="RemoveProductFromCart" finished-at="2025-01-20T17:43:33 IST" duration-ms="18494" status="FAIL">
+        <test-method signature="CheckoutTest()[pri:0, instance:testcases.TC_03_Checkout@35a3d49f]" started-at="2025-01-22T15:45:55 IST" name="CheckoutTest" finished-at="2025-01-22T15:46:55 IST" duration-ms="59818" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Can't locate an element by this strategy: By.chained({AppiumBy.id: com.saucelabs.mydemoapp.android:id/passwordET})]]>
+              <![CDATA[Can't locate an element by this strategy: By.chained({AppiumBy.id: com.saucelabs.mydemoapp.android:id/loginTV})]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({AppiumBy.id: com.saucelabs.mydemoapp.android:id/passwordET})
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({AppiumBy.id: com.saucelabs.mydemoapp.android:id/loginTV})
 at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:166)
 at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.call(InterceptorOfASingleElement.java:75)
 at io.appium.java_client.proxy.Interceptor.intercept(Interceptor.java:78)
-at org.openqa.selenium.remote.RemoteWebElement$ByteBuddy$5xVs6S01.click(Unknown Source)
-at ecommerce.Project.Login_PageObject.login(Login_PageObject.java:56)
-at testcases.TC_02_Add_To_Cart.RemoveProductFromCart(TC_02_Add_To_Cart.java:45)
+at org.openqa.selenium.remote.RemoteWebElement$ByteBuddy$htzdE4Hi.isDisplayed(Unknown Source)
+at ecommerce.Project.Login_PageObject.verifyLogOutSuccess(Login_PageObject.java:81)
+at testcases.TC_03_Checkout.CheckoutTest(TC_03_Checkout.java:45)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -98,15 +183,15 @@ at org.testng.TestNG.run(TestNG.java:1079)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@4f7ae05 (tried for 1 second(s) with 500 milliseconds interval)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@373fb666 (tried for 1 second(s) with 500 milliseconds interval)
 at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:265)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
 at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:135)
 at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:160)
 ... 31 more
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({AppiumBy.id: com.saucelabs.mydemoapp.android:id/passwordET})
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({AppiumBy.id: com.saucelabs.mydemoapp.android:id/loginTV})
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.27.0', revision: 'd6e718d134'
+Build info: version: '4.28.0', revision: 'ac342546e9'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
 Driver info: driver.version: RemoteWebDriver
 at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
@@ -127,14 +212,223 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+=======
+    </test> <!-- Test1 -->
+    <test started-at="2025-01-22T15:32:50 IST" name="Test2" finished-at="2025-01-22T15:34:26 IST" duration-ms="96478">
+      <class name="testcases.TC_02_Add_To_Cart">
+        <test-method is-config="true" signature="startAppiumServerAndInitializeDriver()[pri:0, instance:testcases.TC_02_Add_To_Cart@43df23d3]" started-at="2025-01-22T15:32:50 IST" name="startAppiumServerAndInitializeDriver" finished-at="2025-01-22T15:32:59 IST" duration-ms="9266" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startAppiumServerAndInitializeDriver -->
+        <test-method is-config="true" signature="configuration()[pri:0, instance:testcases.TC_02_Add_To_Cart@43df23d3]" started-at="2025-01-22T15:32:59 IST" name="configuration" finished-at="2025-01-22T15:33:01 IST" duration-ms="1862" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configuration -->
+        <test-method signature="WithLoginAddToCartAndCheckout()[pri:1, instance:testcases.TC_02_Add_To_Cart@43df23d3]" started-at="2025-01-22T15:33:01 IST" name="WithLoginAddToCartAndCheckout" finished-at="2025-01-22T15:33:15 IST" duration-ms="14192" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WithLoginAddToCartAndCheckout -->
+        <test-method signature="WithoutLoginAddToCart()[pri:2, instance:testcases.TC_02_Add_To_Cart@43df23d3]" started-at="2025-01-22T15:33:15 IST" name="WithoutLoginAddToCart" finished-at="2025-01-22T15:33:21 IST" duration-ms="5594" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WithoutLoginAddToCart -->
+        <test-method signature="RemoveProductFromCart()[pri:3, instance:testcases.TC_02_Add_To_Cart@43df23d3]" started-at="2025-01-22T15:33:21 IST" name="RemoveProductFromCart" finished-at="2025-01-22T15:33:39 IST" duration-ms="18347" status="PASS">
+>>>>>>> 35bb73d4c998bed77f81effd339389f177c7bbc3
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckoutTest -->
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:testcases.TC_03_Checkout@35a3d49f]" started-at="2025-01-22T15:46:55 IST" name="Teardown" finished-at="2025-01-22T15:46:55 IST" duration-ms="499" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Teardown -->
+      </class> <!-- testcases.TC_03_Checkout -->
+      <class name="testcases.TC_02_Add_To_Cart">
+        <test-method is-config="true" signature="startAppiumServerAndInitializeDriver()[pri:0, instance:testcases.TC_02_Add_To_Cart@27912e3]" started-at="2025-01-22T15:47:20 IST" name="startAppiumServerAndInitializeDriver" finished-at="2025-01-22T15:47:32 IST" duration-ms="12108" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startAppiumServerAndInitializeDriver -->
+        <test-method is-config="true" signature="configuration()[pri:0, instance:testcases.TC_02_Add_To_Cart@27912e3]" started-at="2025-01-22T15:47:32 IST" name="configuration" finished-at="2025-01-22T15:47:44 IST" duration-ms="12370" status="FAIL">
+          <exception class="org.json.JSONException">
+            <message>
+              <![CDATA[JSONObject["email"] not found.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.json.JSONException: JSONObject["email"] not found.
+at org.json.JSONObject.get(JSONObject.java:570)
+at org.json.JSONObject.getString(JSONObject.java:857)
+at testcases.TC_02_Add_To_Cart.loadLoginCredentials(TC_02_Add_To_Cart.java:83)
+at testcases.TC_02_Add_To_Cart.configuration(TC_02_Add_To_Cart.java:33)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.json.JSONException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configuration -->
+        <test-method signature="WithLoginAddToCartAndCheckout()[pri:1, instance:testcases.TC_02_Add_To_Cart@27912e3]" started-at="2025-01-22T15:47:44 IST" name="WithLoginAddToCartAndCheckout" finished-at="2025-01-22T15:47:44 IST" duration-ms="0" status="SKIP">
+          <exception class="org.json.JSONException">
+            <message>
+              <![CDATA[JSONObject["email"] not found.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.json.JSONException: JSONObject["email"] not found.
+at org.json.JSONObject.get(JSONObject.java:570)
+at org.json.JSONObject.getString(JSONObject.java:857)
+at testcases.TC_02_Add_To_Cart.loadLoginCredentials(TC_02_Add_To_Cart.java:83)
+at testcases.TC_02_Add_To_Cart.configuration(TC_02_Add_To_Cart.java:33)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.json.JSONException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WithLoginAddToCartAndCheckout -->
+        <test-method signature="WithoutLoginAddToCart()[pri:2, instance:testcases.TC_02_Add_To_Cart@27912e3]" started-at="2025-01-22T15:47:44 IST" name="WithoutLoginAddToCart" finished-at="2025-01-22T15:47:44 IST" duration-ms="0" status="SKIP">
+          <exception class="org.json.JSONException">
+            <message>
+              <![CDATA[JSONObject["email"] not found.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.json.JSONException: JSONObject["email"] not found.
+at org.json.JSONObject.get(JSONObject.java:570)
+at org.json.JSONObject.getString(JSONObject.java:857)
+at testcases.TC_02_Add_To_Cart.loadLoginCredentials(TC_02_Add_To_Cart.java:83)
+at testcases.TC_02_Add_To_Cart.configuration(TC_02_Add_To_Cart.java:33)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.json.JSONException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WithoutLoginAddToCart -->
+        <test-method signature="RemoveProductFromCart()[pri:3, instance:testcases.TC_02_Add_To_Cart@27912e3]" started-at="2025-01-22T15:47:44 IST" name="RemoveProductFromCart" finished-at="2025-01-22T15:47:44 IST" duration-ms="0" status="SKIP">
+          <exception class="org.json.JSONException">
+            <message>
+              <![CDATA[JSONObject["email"] not found.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.json.JSONException: JSONObject["email"] not found.
+at org.json.JSONObject.get(JSONObject.java:570)
+at org.json.JSONObject.getString(JSONObject.java:857)
+at testcases.TC_02_Add_To_Cart.loadLoginCredentials(TC_02_Add_To_Cart.java:83)
+at testcases.TC_02_Add_To_Cart.configuration(TC_02_Add_To_Cart.java:33)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.json.JSONException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RemoveProductFromCart -->
-        <test-method is-config="true" signature="Teardown()[pri:0, instance:testcases.TC_02_Add_To_Cart@74f6c5d8]" started-at="2025-01-20T17:43:35 IST" name="Teardown" finished-at="2025-01-20T17:43:36 IST" duration-ms="548" status="PASS">
+<<<<<<< HEAD
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:testcases.TC_02_Add_To_Cart@27912e3]" started-at="2025-01-22T15:47:44 IST" name="Teardown" finished-at="2025-01-22T15:47:44 IST" duration-ms="0" status="SKIP">
+=======
+        <test-method signature="Checkout()[pri:4, instance:testcases.TC_02_Add_To_Cart@43df23d3]" started-at="2025-01-22T15:33:39 IST" name="Checkout" finished-at="2025-01-22T15:34:25 IST" duration-ms="46005" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Checkout -->
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:testcases.TC_02_Add_To_Cart@43df23d3]" started-at="2025-01-22T15:34:25 IST" name="Teardown" finished-at="2025-01-22T15:34:26 IST" duration-ms="1178" status="PASS">
+>>>>>>> 35bb73d4c998bed77f81effd339389f177c7bbc3
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Teardown -->
       </class> <!-- testcases.TC_02_Add_To_Cart -->
+<<<<<<< HEAD
     </test> <!-- Test -->
+  </suite> <!-- Appium Test Suite -->
+=======
+    </test> <!-- Test2 -->
   </suite> <!-- Suite -->
+>>>>>>> 35bb73d4c998bed77f81effd339389f177c7bbc3
 </testng-results>

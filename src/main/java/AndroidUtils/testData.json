@@ -1,13 +1,19 @@
-[
-	"loginData":   
-	{
-            "email": "bod@example.com", 
-            "password": "10203040"
-        },
-		
-	"Address":
-	{
-		"reb"
-	}
-	
-]
+{
+  "loginDetails": {
+    "email": "bod@example.com",
+    "password": "10203040"
+  },
+  "checkoutDetails": {
+    "fullName": "Rebecca Winter",
+    "addressLine1": "Mandorley 112",
+    "addressLine2": "Entrance 1",
+    "city": "Truro",
+    "state": "Cornwall",
+    "postalCode": "89750",
+    "country": "United Kingdom",
+    "cardHolderName": "Rebecca Winter",
+    "cardNumber": "3258125675687891",
+    "expiryDate": "0325",
+    "cvv": "123"
+  }
+}
