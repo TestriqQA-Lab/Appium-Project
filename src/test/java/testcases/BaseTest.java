@@ -8,8 +8,6 @@ import io.appium.java_client.android.options.UiAutomator2Options;
 import org.testng.annotations.AfterClass;
 import AndroidUtils.AppiumUtils;
 import java.io.File;
-import java.net.MalformedURLException;
-import java.net.URL;
 
 public class BaseTest extends AppiumUtils {
 
@@ -23,12 +21,17 @@ public class BaseTest extends AppiumUtils {
             service = new AppiumServiceBuilder()
                     .withAppiumJS(new File("C:\\Users\\Testriq\\AppData\\Roaming\\npm\\node_modules\\appium\\build\\lib\\main.js"))
                     .withIPAddress("127.0.0.1")
-                    .usingPort(4723)
+                    .usingPort(4725)
                     .build();
+            
+            System.out.println("Starting Appium Server...");
             service.start();
             
-            // Wait for server to start
-            Thread.sleep(5000);  // Wait for 5 seconds to allow Appium server to start
+            if (!service.isRunning()) {
+                throw new IllegalStateException("Appium server failed to start.");
+            }
+            
+            System.out.println("Appium Server started successfully.");
 
             // Configure desired capabilities
             UiAutomator2Options options = new UiAutomator2Options();
@@ -38,25 +41,38 @@ public class BaseTest extends AppiumUtils {
             options.setAppActivity("com.saucelabs.mydemoapp.android.view.activities.SplashActivity"); // Main activity
             options.setCapability("autoGrantPermissions", true); // Auto grant permissions
 
-            // Initialize the Android driver
-            driver = new AndroidDriver(new URL("http://127.0.0.1:4723"), options);
-            System.out.println("Appium driver initialized successfully.");
-        } catch (MalformedURLException e) {
-            e.printStackTrace();
-            throw new RuntimeException("Invalid URL for AndroidDriver.");
+            // Initialize the driver
+            driver = new AndroidDriver(service.getUrl(), options);
+            System.out.println("Driver initialized successfully.");
+            
         } catch (Exception e) {
+            System.err.println("Error while starting Appium server or initializing driver: " + e.getMessage());
             e.printStackTrace();
-            throw new RuntimeException("Failed to initialize Appium session. Check configurations.");
+            if (service != null && service.isRunning()) {
+                service.stop();
+            }
+            throw new RuntimeException("Failed to start Appium server or initialize driver.", e);
         }
     }
 
     @AfterClass
-    public void Teardown() throws InterruptedException {
-        if (driver != null) {
-            driver.quit();
+    public void teardown() {
+        try {
+            if (driver != null) {
+                System.out.println("Quitting driver...");
+                driver.quit();
+            }
+        } catch (Exception e) {
+            System.err.println("Error while quitting driver: " + e.getMessage());
         }
-        if (service != null) {
-            service.stop();
+
+        try {
+            if (service != null && service.isRunning()) {
+                System.out.println("Stopping Appium server...");
+                service.stop();
+            }
+        } catch (Exception e) {
+            System.err.println("Error while stopping Appium server: " + e.getMessage());
         }
     }
 }

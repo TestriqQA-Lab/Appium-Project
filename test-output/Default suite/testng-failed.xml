@@ -6,8 +6,8 @@
       <class name="testcases.TC_01_Login">
         <methods>
           <include name="startAppiumServerAndInitializeDriver"/>
-          <include name="Teardown"/>
           <include name="LogintoTheapp"/>
+          <include name="Teardown"/>
           <include name="configuration"/>
         </methods>
       </class> <!-- testcases.TC_01_Login -->

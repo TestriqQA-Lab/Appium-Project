@@ -1,8 +1,10 @@
 {
-  "loginDetails": {
-    "email": "bod@example.com",
-    "password": "10203040"
-  },
+  "loginDetails": 
+    {
+      "email": "bod@example.com",
+      "password": "10203040"
+    },
+	
   "checkoutDetails": {
     "fullName": "Rebecca Winter",
     "addressLine1": "Mandorley 112",

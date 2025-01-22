@@ -1,9 +1,8 @@
 package testcases;
 
-import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import org.testng.annotations.BeforeMethod;
-
 import java.io.IOException;
 import java.net.URISyntaxException;
 import java.nio.file.Files;
@@ -18,7 +17,7 @@ public class TC_01_Login extends BaseTest {
     String email;
     String password;
 
-    @BeforeMethod
+    @BeforeClass
     public void configuration() throws InterruptedException, IOException, URISyntaxException {
     	// Start the Appium server and initialize the driver
         startAppiumServerAndInitializeDriver();
@@ -39,24 +38,19 @@ public class TC_01_Login extends BaseTest {
         Assert.assertTrue(login.verifyLogOutSuccess());
     }
 
-    @AfterMethod
+    @AfterClass
     public void Teardown() throws InterruptedException {
         // Close the driver session
         driver.quit();
     }
 
     private void loadLoginCredentials() throws IOException {
-        // Specify the relative path based on the project structure
-        String path = "src/main/java/AndroidUtils/testData.json";
-
-        // Read the content of the JSON file
-        String content = new String(Files.readAllBytes(Paths.get(path)));
-
-        // Parse the content as a JSONObject
+        String content = new String(Files.readAllBytes(Paths.get("G:\\Automation Projects\\testriq\\src\\main\\java\\AndroidUtils\\testData.json")));
         JSONObject jsonObject = new JSONObject(content);
 
-        // Extract email and password from the JSON
-        this.email = jsonObject.getString("email");
-        this.password = jsonObject.getString("password");
+        // Load login details from the JSON
+        JSONObject loginDetails = jsonObject.getJSONObject("loginDetails");
+        email = loginDetails.getString("email");
+        password = loginDetails.getString("password");
     }
 }

@@ -70,17 +70,12 @@ public class TC_02_Add_To_Cart extends BaseTest {
 
     // Method to load login credentials from the JSON file
     private void loadLoginCredentials() throws IOException {
-        // Specify the absolute path to your JSON file
-    	String path = "src/main/java/AndroidUtils/testData.json";
-
-        // Read the content of the JSON file
-        String content = new String(Files.readAllBytes(Paths.get(path)));
-
-        // Parse the content as a JSONObject
+        String content = new String(Files.readAllBytes(Paths.get("G:\\Automation Projects\\testriq\\src\\main\\java\\AndroidUtils\\testData.json")));
         JSONObject jsonObject = new JSONObject(content);
 
-        // Extract email and password from the JSON
-        this.email = jsonObject.getString("email");
-        this.password = jsonObject.getString("password");
+        // Load login details from the JSON
+        JSONObject loginDetails = jsonObject.getJSONObject("loginDetails");
+        email = loginDetails.getString("email");
+        password = loginDetails.getString("password");
     }
 }
