@@ -56,8 +56,6 @@ public class AppiumUtils {
         data.add(map);
     }
     
-    
-    
     return data;
 }
 

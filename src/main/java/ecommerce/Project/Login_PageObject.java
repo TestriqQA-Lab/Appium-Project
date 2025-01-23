@@ -3,18 +3,20 @@ package ecommerce.Project;
 import java.time.Duration;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
+
+import AndroidUtils.AndroidActions;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 
-public class Login_PageObject {
+public class Login_PageObject extends AndroidActions{
 
 	public AppiumDriver driver;
 
 	public Login_PageObject(AndroidDriver driver) {
 		
-		super();
+		super(driver);
 		this.driver = driver;
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 		PageFactory.initElements(new AppiumFieldDecorator(driver), this);
@@ -55,6 +57,7 @@ public class Login_PageObject {
 		emailID.sendKeys(email);
 		password.click();
 		password.sendKeys(pass);
+		super.hideKeyboard();
 		loginButton.click();
 	}
 	

@@ -1,5 +1,7 @@
 package AndroidUtils;
 
+import java.io.IOException;
+
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -29,7 +31,20 @@ public class Listeners extends AppiumUtils implements ITestListener {
     @Override
     public void onTestFailure(ITestResult result) {
         extentTest.get().fail(result.getThrowable()); // Log the failure in the report
+        try {
+            // Retrieve the driver instance from the test class
+            driver = (AppiumDriver) result.getTestClass().getRealClass().getField("driver").get(result.getInstance());
+            
+            // Capture and attach screenshot
+            String screenshotPath = getScreenshot(result.getMethod().getMethodName(), driver);
+            extentTest.get().addScreenCaptureFromPath(screenshotPath, result.getMethod().getMethodName());
+        } catch (NoSuchFieldException | IllegalAccessException e) {
+            extentTest.get().fail("Failed to access driver instance: " + e.getMessage());
+        } catch (IOException e) {
+            extentTest.get().fail("Failed to capture screenshot: " + e.getMessage());
+        }
     }
+    
 
     @Override
     public void onFinish(ITestContext result) {

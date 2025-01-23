@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,8 +38,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-Appium_Test_Suite" class="navigator-link">
-              <span class="suite-name border-failed">Appium Test Suite</span>
+            <a href="#" panel-name="suite-ParallelTestSuite" class="navigator-link">
+              <span class="suite-name border-failed">ParallelTestSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,37 +49,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-Appium_Test_Suite" class="navigator-link ">
+                  <a href="#" panel-name="test-xml-ParallelTestSuite" class="navigator-link ">
                     <span>G:\Automation Projects\testriq\src\test\resources\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-Appium_Test_Suite" class="navigator-link ">
-                    <span class="test-stats">1 test</span>
+                  <a href="#" panel-name="testlist-ParallelTestSuite" class="navigator-link ">
+                    <span class="test-stats">3 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-Appium_Test_Suite" class="navigator-link ">
+                  <a href="#" panel-name="group-ParallelTestSuite" class="navigator-link ">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-Appium_Test_Suite" class="navigator-link ">
+                  <a href="#" panel-name="times-ParallelTestSuite" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-Appium_Test_Suite" class="navigator-link ">
+                  <a href="#" panel-name="reporter-ParallelTestSuite" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-Appium_Test_Suite" class="navigator-link ">
+                  <a href="#" panel-name="ignored-methods-ParallelTestSuite" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-Appium_Test_Suite" class="navigator-link ">
+                  <a href="#" panel-name="chronological-ParallelTestSuite" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -92,50 +92,109 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
+                    <span class="method-stats">15 methods, 3 failed,  2 skipped,  10 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
                     <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Appium_Test_Suite" class="hide-methods failed suite-Appium_Test_Suite"> (hide)</a> <!-- hide-methods failed suite-Appium_Test_Suite -->
-                      <a href="#" panel-name="suite-Appium_Test_Suite" class="show-methods failed suite-Appium_Test_Suite"> (show)</a> <!-- show-methods failed suite-Appium_Test_Suite -->
+                      <a href="#" panel-name="suite-ParallelTestSuite" class="hide-methods failed suite-ParallelTestSuite"> (hide)</a> <!-- hide-methods failed suite-ParallelTestSuite -->
+                      <a href="#" panel-name="suite-ParallelTestSuite" class="show-methods failed suite-ParallelTestSuite"> (show)</a> <!-- show-methods failed suite-ParallelTestSuite -->
                     </span>
-                    <div class="method-list-content failed suite-Appium_Test_Suite">
+                    <div class="method-list-content failed suite-ParallelTestSuite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Appium_Test_Suite" title="testcases.TC_02_Add_To_Cart" class="method navigator-link" hash-for-method="RemoveProductFromCart">RemoveProductFromCart</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-ParallelTestSuite" title="testcases.TC_02_Add_To_Cart" class="method navigator-link" hash-for-method="RemoveProductFromCart">RemoveProductFromCart</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-Appium_Test_Suite -->
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ParallelTestSuite" title="testcases.TC_02_Add_To_Cart" class="method navigator-link" hash-for-method="WithLoginAddToCartAndCheckout">WithLoginAddToCartAndCheckout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ParallelTestSuite" title="testcases.TC_02_Add_To_Cart" class="method navigator-link" hash-for-method="WithoutLoginAddToCart">WithoutLoginAddToCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-ParallelTestSuite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-ParallelTestSuite" class="hide-methods skipped suite-ParallelTestSuite"> (hide)</a> <!-- hide-methods skipped suite-ParallelTestSuite -->
+                      <a href="#" panel-name="suite-ParallelTestSuite" class="show-methods skipped suite-ParallelTestSuite"> (show)</a> <!-- show-methods skipped suite-ParallelTestSuite -->
+                    </span>
+                    <div class="method-list-content skipped suite-ParallelTestSuite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-ParallelTestSuite" title="testcases.TC_03_Checkout" class="method navigator-link" hash-for-method="CheckoutTest">CheckoutTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-ParallelTestSuite" title="testcases.TC_03_Checkout" class="method navigator-link" hash-for-method="CheckoutTest">CheckoutTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-ParallelTestSuite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Appium_Test_Suite" class="hide-methods passed suite-Appium_Test_Suite"> (hide)</a> <!-- hide-methods passed suite-Appium_Test_Suite -->
-                      <a href="#" panel-name="suite-Appium_Test_Suite" class="show-methods passed suite-Appium_Test_Suite"> (show)</a> <!-- show-methods passed suite-Appium_Test_Suite -->
+                      <a href="#" panel-name="suite-ParallelTestSuite" class="hide-methods passed suite-ParallelTestSuite"> (hide)</a> <!-- hide-methods passed suite-ParallelTestSuite -->
+                      <a href="#" panel-name="suite-ParallelTestSuite" class="show-methods passed suite-ParallelTestSuite"> (show)</a> <!-- show-methods passed suite-ParallelTestSuite -->
                     </span>
-                    <div class="method-list-content passed suite-Appium_Test_Suite">
+                    <div class="method-list-content passed suite-ParallelTestSuite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Appium_Test_Suite" title="testcases.TC_03_Checkout" class="method navigator-link" hash-for-method="CheckoutTest">CheckoutTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-ParallelTestSuite" title="testcases.TC_03_Checkout" class="method navigator-link" hash-for-method="CheckoutTest">CheckoutTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Appium_Test_Suite" title="testcases.TC_01_Login" class="method navigator-link" hash-for-method="LogintoTheapp">LogintoTheapp</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-ParallelTestSuite" title="testcases.TC_01_Login" class="method navigator-link" hash-for-method="LogintoTheApp">LogintoTheApp</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Appium_Test_Suite" title="testcases.TC_02_Add_To_Cart" class="method navigator-link" hash-for-method="WithLoginAddToCartAndCheckout">WithLoginAddToCartAndCheckout</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-ParallelTestSuite" title="testcases.TC_01_Login" class="method navigator-link" hash-for-method="LogintoTheApp">LogintoTheApp</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Appium_Test_Suite" title="testcases.TC_02_Add_To_Cart" class="method navigator-link" hash-for-method="WithoutLoginAddToCart">WithoutLoginAddToCart</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-ParallelTestSuite" title="testcases.TC_01_Login" class="method navigator-link" hash-for-method="LogintoTheApp">LogintoTheApp</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Appium_Test_Suite -->
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ParallelTestSuite" title="testcases.TC_02_Add_To_Cart" class="method navigator-link" hash-for-method="RemoveProductFromCart">RemoveProductFromCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ParallelTestSuite" title="testcases.TC_02_Add_To_Cart" class="method navigator-link" hash-for-method="RemoveProductFromCart">RemoveProductFromCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ParallelTestSuite" title="testcases.TC_02_Add_To_Cart" class="method navigator-link" hash-for-method="WithLoginAddToCartAndCheckout">WithLoginAddToCartAndCheckout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ParallelTestSuite" title="testcases.TC_02_Add_To_Cart" class="method navigator-link" hash-for-method="WithLoginAddToCartAndCheckout">WithLoginAddToCartAndCheckout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ParallelTestSuite" title="testcases.TC_02_Add_To_Cart" class="method navigator-link" hash-for-method="WithoutLoginAddToCart">WithoutLoginAddToCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ParallelTestSuite" title="testcases.TC_02_Add_To_Cart" class="method navigator-link" hash-for-method="WithoutLoginAddToCart">WithoutLoginAddToCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-ParallelTestSuite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -146,8 +205,8 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Appium_Test_Suite" class="panel Appium_Test_Suite">
-          <div class="suite-Appium_Test_Suite-class-failed">
+        <div panel-name="suite-ParallelTestSuite" class="panel ParallelTestSuite">
+          <div class="suite-ParallelTestSuite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
               <span class="class-name">testcases.TC_02_Add_To_Cart</span>
@@ -158,21 +217,25 @@
                   <a name="RemoveProductFromCart">
                   </a> <!-- RemoveProductFromCart -->
                   <span class="method-name">RemoveProductFromCart</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.chained({AppiumBy.id: com.saucelabs.mydemoapp.android:id/passwordET})
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.chained({AppiumBy.accessibilityId: Login Menu Item})
 	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:166)
 	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.call(InterceptorOfASingleElement.java:75)
 	at io.appium.java_client.proxy.Interceptor.intercept(Interceptor.java:78)
-	at org.openqa.selenium.remote.RemoteWebElement$ByteBuddy$jcu2wsvp.sendKeys(Unknown Source)
-	at ecommerce.Project.Login_PageObject.login(Login_PageObject.java:57)
-	at testcases.TC_02_Add_To_Cart.RemoveProductFromCart(TC_02_Add_To_Cart.java:58)
+	at org.openqa.selenium.remote.RemoteWebElement$ByteBuddy$vBfQcPFZ.click(Unknown Source)
+	at ecommerce.Project.Login_PageObject.login(Login_PageObject.java:55)
+	at testcases.TC_02_Add_To_Cart.RemoveProductFromCart(TC_02_Add_To_Cart.java:60)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@1e512b3 (tried for 1 second(s) with 500 milliseconds interval)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@23631eb8 (tried for 1 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:265)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
 	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:135)
 	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:160)
-	... 31 more
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({AppiumBy.id: com.saucelabs.mydemoapp.android:id/passwordET})
+	... 25 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({AppiumBy.accessibilityId: Login Menu Item})
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.28.0&apos;, revision: &apos;ac342546e9&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
@@ -191,19 +254,254 @@ Driver info: driver.version: RemoteWebDriver
 	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:217)
 	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:210)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	... 33 more
-... Removed 25 stack frames
+	... 27 more
+... Removed 15 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="WithLoginAddToCartAndCheckout">
+                  </a> <!-- WithLoginAddToCartAndCheckout -->
+                  <span class="method-name">WithLoginAddToCartAndCheckout</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.chained({AppiumBy.accessibilityId: Increase item quantity})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:166)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.call(InterceptorOfASingleElement.java:75)
+	at io.appium.java_client.proxy.Interceptor.intercept(Interceptor.java:78)
+	at org.openqa.selenium.remote.RemoteWebElement$ByteBuddy$Qizpdz83.click(Unknown Source)
+	at ecommerce.Project.Add_To_Cart_Page_Object.Withlogin(Add_To_Cart_Page_Object.java:108)
+	at testcases.TC_02_Add_To_Cart.WithLoginAddToCartAndCheckout(TC_02_Add_To_Cart.java:45)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@2f777509 (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:265)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:135)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:160)
+	... 25 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({AppiumBy.accessibilityId: Increase item quantity})
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.28.0&apos;, revision: &apos;ac342546e9&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
+Driver info: driver.version: RemoteWebDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:53)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$findElement$1(AppiumElementLocator.java:160)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:217)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:210)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 27 more
+... Removed 15 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="WithoutLoginAddToCart">
+                  </a> <!-- WithoutLoginAddToCart -->
+                  <span class="method-name">WithoutLoginAddToCart</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.chained({AppiumBy.accessibilityId: Increase item quantity})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:166)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.call(InterceptorOfASingleElement.java:75)
+	at io.appium.java_client.proxy.Interceptor.intercept(Interceptor.java:78)
+	at org.openqa.selenium.remote.RemoteWebElement$ByteBuddy$Qizpdz83.click(Unknown Source)
+	at ecommerce.Project.Add_To_Cart_Page_Object.AddToCartWithoutlogin(Add_To_Cart_Page_Object.java:118)
+	at testcases.TC_02_Add_To_Cart.WithoutLoginAddToCart(TC_02_Add_To_Cart.java:54)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@5ff7d3ec (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:265)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:135)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:160)
+	... 25 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({AppiumBy.accessibilityId: Increase item quantity})
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.28.0&apos;, revision: &apos;ac342546e9&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
+Driver info: driver.version: RemoteWebDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:53)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$findElement$1(AppiumElementLocator.java:160)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:217)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:210)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 27 more
+... Removed 15 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Appium_Test_Suite-class-failed -->
-          <div class="suite-Appium_Test_Suite-class-passed">
+          </div> <!-- suite-ParallelTestSuite-class-failed -->
+          <div class="suite-ParallelTestSuite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">testcases.TC_03_Checkout</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="CheckoutTest">
+                  </a> <!-- CheckoutTest -->
+                  <span class="method-name">CheckoutTest</span>
+                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: UiAutomator2 Server cannot start because the local port #8300 is busy. Make sure the port you provide via &apos;systemPort&apos; capability is not occupied. This situation might often be a result of an inaccurate sessions management, e.g. old automation sessions on the same device must always be closed before starting new ones. 
+Host info: host: &apos;TESTRIQ&apos;, ip: &apos;192.168.29.64&apos;
+Build info: version: &apos;4.28.0&apos;, revision: &apos;ac342546e9&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:systemPort=8300, appium:automationName=UiAutomator2, appium:appPackage=com.saucelabs.mydemoapp.android, appium:udid=RZCT815XFZT, appium:autoGrantPermissions=true, platformName=ANDROID, appium:app=G:\Automation Projects\testriq\src\main\java\apps\mda-2.2.0-25.apk, appium:appActivity=com.saucelabs.mydemoapp.android.view.activities.SplashActivity, appium:deviceName=RZCT815XFZT}], desiredCapabilities=Capabilities {appium:app: G:\Automation Projects\test..., appium:appActivity: com.saucelabs.mydemoapp.and..., appium:appPackage: com.saucelabs.mydemoapp.and..., appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:deviceName: RZCT815XFZT, appium:systemPort: 8300, appium:udid: RZCT815XFZT, platformName: ANDROID}}]
+Capabilities {appium:app: G:\Automation Projects\test..., appium:appActivity: com.saucelabs.mydemoapp.and..., appium:appPackage: com.saucelabs.mydemoapp.and..., appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:deviceName: RZCT815XFZT, appium:systemPort: 8300, appium:udid: RZCT815XFZT, platformName: ANDROID}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:116)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:96)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:176)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:268)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:174)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:90)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:102)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:109)
+	at testcases.BaseTest.startAppiumServerAndInitializeDriver(BaseTest.java:35)
+	at testcases.TC_03_Checkout.configuration(TC_03_Checkout.java:26)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 15 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CheckoutTest">
+                  </a> <!-- CheckoutTest -->
+                  <span class="method-name">CheckoutTest</span>
+                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: UiAutomator2 Server cannot start because the local port #8400 is busy. Make sure the port you provide via &apos;systemPort&apos; capability is not occupied. This situation might often be a result of an inaccurate sessions management, e.g. old automation sessions on the same device must always be closed before starting new ones. 
+Host info: host: &apos;TESTRIQ&apos;, ip: &apos;192.168.29.64&apos;
+Build info: version: &apos;4.28.0&apos;, revision: &apos;ac342546e9&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:systemPort=8400, appium:automationName=UiAutomator2, appium:appPackage=com.saucelabs.mydemoapp.android, appium:udid=94CAY0MBUV, appium:autoGrantPermissions=true, platformName=ANDROID, appium:app=G:\Automation Projects\testriq\src\main\java\apps\mda-2.2.0-25.apk, appium:appActivity=com.saucelabs.mydemoapp.android.view.activities.SplashActivity, appium:deviceName=94CAY0MBUV}], desiredCapabilities=Capabilities {appium:app: G:\Automation Projects\test..., appium:appActivity: com.saucelabs.mydemoapp.and..., appium:appPackage: com.saucelabs.mydemoapp.and..., appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:deviceName: 94CAY0MBUV, appium:systemPort: 8400, appium:udid: 94CAY0MBUV, platformName: ANDROID}}]
+Capabilities {appium:app: G:\Automation Projects\test..., appium:appActivity: com.saucelabs.mydemoapp.and..., appium:appPackage: com.saucelabs.mydemoapp.and..., appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:deviceName: 94CAY0MBUV, appium:systemPort: 8400, appium:udid: 94CAY0MBUV, platformName: ANDROID}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:116)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:96)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:176)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:268)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:174)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:90)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:102)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:109)
+	at testcases.BaseTest.startAppiumServerAndInitializeDriver(BaseTest.java:35)
+	at testcases.TC_03_Checkout.configuration(TC_03_Checkout.java:26)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 15 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-ParallelTestSuite-class-skipped -->
+          <div class="suite-ParallelTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.TC_03_Checkout</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="CheckoutTest">
+                  </a> <!-- CheckoutTest -->
+                  <span class="method-name">CheckoutTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-ParallelTestSuite-class-passed -->
+          <div class="suite-ParallelTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.TC_01_Login</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="LogintoTheApp">
+                  </a> <!-- LogintoTheApp -->
+                  <span class="method-name">LogintoTheApp</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="LogintoTheApp">
+                  </a> <!-- LogintoTheApp -->
+                  <span class="method-name">LogintoTheApp</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="LogintoTheApp">
+                  </a> <!-- LogintoTheApp -->
+                  <span class="method-name">LogintoTheApp</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-ParallelTestSuite-class-passed -->
+          <div class="suite-ParallelTestSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">testcases.TC_02_Add_To_Cart</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="RemoveProductFromCart">
+                  </a> <!-- RemoveProductFromCart -->
+                  <span class="method-name">RemoveProductFromCart</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="RemoveProductFromCart">
+                  </a> <!-- RemoveProductFromCart -->
+                  <span class="method-name">RemoveProductFromCart</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="WithLoginAddToCartAndCheckout">
+                  </a> <!-- WithLoginAddToCartAndCheckout -->
+                  <span class="method-name">WithLoginAddToCartAndCheckout</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="WithLoginAddToCartAndCheckout">
@@ -218,40 +516,17 @@ Driver info: driver.version: RemoteWebDriver
                   <span class="method-name">WithoutLoginAddToCart</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Appium_Test_Suite-class-passed -->
-          <div class="suite-Appium_Test_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">testcases.TC_01_Login</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="LogintoTheapp">
-                  </a> <!-- LogintoTheapp -->
-                  <span class="method-name">LogintoTheapp</span>
+                  <a name="WithoutLoginAddToCart">
+                  </a> <!-- WithoutLoginAddToCart -->
+                  <span class="method-name">WithoutLoginAddToCart</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Appium_Test_Suite-class-passed -->
-          <div class="suite-Appium_Test_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">testcases.TC_03_Checkout</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="CheckoutTest">
-                  </a> <!-- CheckoutTest -->
-                  <span class="method-name">CheckoutTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Appium_Test_Suite-class-passed -->
-        </div> <!-- panel Appium_Test_Suite -->
-        <div panel-name="test-xml-Appium_Test_Suite" class="panel">
+          </div> <!-- suite-ParallelTestSuite-class-passed -->
+        </div> <!-- panel ParallelTestSuite -->
+        <div panel-name="test-xml-ParallelTestSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">G:\Automation Projects\testriq\src\test\resources\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
@@ -259,100 +534,172 @@ Driver info: driver.version: RemoteWebDriver
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Appium Test Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+&lt;suite parallel=&quot;tests&quot; name=&quot;ParallelTestSuite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;AndroidUtils.Listeners&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;Device1&quot;&gt;
+    &lt;parameter name=&quot;appiumPort&quot; value=&quot;4723&quot;/&gt;
+    &lt;parameter name=&quot;deviceName&quot; value=&quot;2A131FDH200HX6&quot;/&gt;
+    &lt;parameter name=&quot;appPath&quot; value=&quot;G:\Automation Projects\testriq\src\main\java\apps\mda-2.2.0-25.apk&quot;/&gt;
+    &lt;parameter name=&quot;systemPort&quot; value=&quot;8200&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testcases.TC_03_Checkout&quot;/&gt;
       &lt;class name=&quot;testcases.TC_01_Login&quot;/&gt;
       &lt;class name=&quot;testcases.TC_02_Add_To_Cart&quot;/&gt;
+      &lt;class name=&quot;testcases.TC_03_Checkout&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Test --&gt;
-&lt;/suite&gt; &lt;!-- Appium Test Suite --&gt;
+  &lt;/test&gt; &lt;!-- Device1 --&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;Device2&quot;&gt;
+    &lt;parameter name=&quot;appiumPort&quot; value=&quot;4724&quot;/&gt;
+    &lt;parameter name=&quot;deviceName&quot; value=&quot;RZCT815XFZT&quot;/&gt;
+    &lt;parameter name=&quot;appPath&quot; value=&quot;G:\Automation Projects\testriq\src\main\java\apps\mda-2.2.0-25.apk&quot;/&gt;
+    &lt;parameter name=&quot;systemPort&quot; value=&quot;8300&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testcases.TC_01_Login&quot;/&gt;
+      &lt;class name=&quot;testcases.TC_02_Add_To_Cart&quot;/&gt;
+      &lt;class name=&quot;testcases.TC_03_Checkout&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Device2 --&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;Device3&quot;&gt;
+    &lt;parameter name=&quot;appiumPort&quot; value=&quot;4725&quot;/&gt;
+    &lt;parameter name=&quot;deviceName&quot; value=&quot;94CAY0MBUV&quot;/&gt;
+    &lt;parameter name=&quot;appPath&quot; value=&quot;G:\Automation Projects\testriq\src\main\java\apps\mda-2.2.0-25.apk&quot;/&gt;
+    &lt;parameter name=&quot;systemPort&quot; value=&quot;8400&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testcases.TC_01_Login&quot;/&gt;
+      &lt;class name=&quot;testcases.TC_02_Add_To_Cart&quot;/&gt;
+      &lt;class name=&quot;testcases.TC_03_Checkout&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Device3 --&gt;
+&lt;/suite&gt; &lt;!-- ParallelTestSuite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Appium_Test_Suite" class="panel">
+        <div panel-name="testlist-ParallelTestSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Appium Test Suite</span>
+            <span class="header-content">Tests for ParallelTestSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (3 classes)</span>
+                <span class="test-name">Device1 (3 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">Device2 (3 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">Device3 (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Appium_Test_Suite" class="panel">
+        <div panel-name="group-ParallelTestSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Appium Test Suite</span>
+            <span class="header-content">Groups for ParallelTestSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Appium_Test_Suite" class="panel">
+        <div panel-name="times-ParallelTestSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Appium Test Suite</span>
+            <span class="header-content">Times for ParallelTestSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Appium_Test_Suite');
-function tableData_Appium_Test_Suite() {
+suiteTableInitFunctions.push('tableData_ParallelTestSuite');
+function tableData_ParallelTestSuite() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(15);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'CheckoutTest')
 data.setCell(0, 2, 'testcases.TC_03_Checkout')
-data.setCell(0, 3, 45224);
+data.setCell(0, 3, 45227);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'RemoveProductFromCart')
+data.setCell(1, 1, 'WithLoginAddToCartAndCheckout')
 data.setCell(1, 2, 'testcases.TC_02_Add_To_Cart')
-data.setCell(1, 3, 20625);
+data.setCell(1, 3, 26991);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'WithLoginAddToCartAndCheckout')
+data.setCell(2, 1, 'RemoveProductFromCart')
 data.setCell(2, 2, 'testcases.TC_02_Add_To_Cart')
-data.setCell(2, 3, 15932);
+data.setCell(2, 3, 21110);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'LogintoTheapp')
-data.setCell(3, 2, 'testcases.TC_01_Login')
-data.setCell(3, 3, 11961);
+data.setCell(3, 1, 'RemoveProductFromCart')
+data.setCell(3, 2, 'testcases.TC_02_Add_To_Cart')
+data.setCell(3, 3, 21022);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'WithoutLoginAddToCart')
 data.setCell(4, 2, 'testcases.TC_02_Add_To_Cart')
-data.setCell(4, 3, 6425);
-window.suiteTableData['Appium_Test_Suite']= { tableData: data, tableDiv: 'times-div-Appium_Test_Suite'}
+data.setCell(4, 3, 17672);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'WithLoginAddToCartAndCheckout')
+data.setCell(5, 2, 'testcases.TC_02_Add_To_Cart')
+data.setCell(5, 3, 16463);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'LogintoTheApp')
+data.setCell(6, 2, 'testcases.TC_01_Login')
+data.setCell(6, 3, 16424);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'WithLoginAddToCartAndCheckout')
+data.setCell(7, 2, 'testcases.TC_02_Add_To_Cart')
+data.setCell(7, 3, 15719);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'RemoveProductFromCart')
+data.setCell(8, 2, 'testcases.TC_02_Add_To_Cart')
+data.setCell(8, 3, 15313);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'LogintoTheApp')
+data.setCell(9, 2, 'testcases.TC_01_Login')
+data.setCell(9, 3, 12978);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'LogintoTheApp')
+data.setCell(10, 2, 'testcases.TC_01_Login')
+data.setCell(10, 3, 12130);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'WithoutLoginAddToCart')
+data.setCell(11, 2, 'testcases.TC_02_Add_To_Cart')
+data.setCell(11, 3, 6313);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'WithoutLoginAddToCart')
+data.setCell(12, 2, 'testcases.TC_02_Add_To_Cart')
+data.setCell(12, 3, 5843);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'CheckoutTest')
+data.setCell(13, 2, 'testcases.TC_03_Checkout')
+data.setCell(13, 3, 0);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'CheckoutTest')
+data.setCell(14, 2, 'testcases.TC_03_Checkout')
+data.setCell(14, 3, 0);
+window.suiteTableData['ParallelTestSuite']= { tableData: data, tableDiv: 'times-div-ParallelTestSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
-              <div id="times-div-Appium_Test_Suite">
-              </div> <!-- times-div-Appium_Test_Suite -->
+              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <div id="times-div-ParallelTestSuite">
+              </div> <!-- times-div-ParallelTestSuite -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Appium_Test_Suite" class="panel">
+        <div panel-name="reporter-ParallelTestSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Appium Test Suite</span>
+            <span class="header-content">Reporter output for ParallelTestSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Appium_Test_Suite" class="panel">
+        <div panel-name="ignored-methods-ParallelTestSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Appium_Test_Suite" class="panel">
+        <div panel-name="chronological-ParallelTestSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
@@ -360,80 +707,163 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.TC_03_Checkout</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">startAppiumServerAndInitializeDriver</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">configuration(RZCT815XFZT, 8300, 4724, G:\Automation Projects\testriq\src\main\java\apps\mda-2.2.0-25.apk)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
-                <span class="method-name">configuration</span>
-                <span class="method-start">12372 ms</span>
+                <span class="method-name">configuration(2A131FDH200HX6, 8200, 4723, G:\Automation Projects\testriq\src\main\java\apps\mda-2.2.0-25.apk)</span>
+                <span class="method-start">1 ms</span>
               </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <span class="method-name">CheckoutTest</span>
-                <span class="method-start">22136 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">Teardown</span>
-                <span class="method-start">67372 ms</span>
-              </div> <!-- configuration-class after -->
-              <div class="configuration-class after">
-                <span class="method-name">teardown</span>
-                <span class="method-start">67830 ms</span>
-              </div> <!-- configuration-class after -->
+              <div class="configuration-class before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">configuration(94CAY0MBUV, 8400, 4725, G:\Automation Projects\testriq\src\main\java\apps\mda-2.2.0-25.apk)</span>
+                <span class="method-start">1 ms</span>
+              </div> <!-- configuration-class before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.TC_01_Login</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">startAppiumServerAndInitializeDriver</span>
-                <span class="method-start">67833 ms</span>
+                <span class="method-name">configuration(RZCT815XFZT, 8300, 4724, G:\Automation Projects\testriq\src\main\java\apps\mda-2.2.0-25.apk)</span>
+                <span class="method-start">5365 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
-                <span class="method-name">configuration</span>
-                <span class="method-start">74202 ms</span>
+                <span class="method-name">configuration(94CAY0MBUV, 8400, 4725, G:\Automation Projects\testriq\src\main\java\apps\mda-2.2.0-25.apk)</span>
+                <span class="method-start">5365 ms</span>
               </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.TC_03_Checkout</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">LogintoTheapp</span>
-                <span class="method-start">81195 ms</span>
+                <span class="method-name">CheckoutTest</span>
+                <span class="method-start">11861 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.TC_01_Login</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">LogintoTheApp</span>
+                <span class="method-start">14689 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">LogintoTheApp</span>
+                <span class="method-start">16210 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">Teardown</span>
-                <span class="method-start">93159 ms</span>
-              </div> <!-- configuration-class after -->
-              <div class="configuration-class after">
-                <span class="method-name">teardown</span>
-                <span class="method-start">93601 ms</span>
+                <span class="method-start">27671 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.TC_02_Add_To_Cart</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">startAppiumServerAndInitializeDriver</span>
-                <span class="method-start">93602 ms</span>
+                <span class="method-name">configuration(RZCT815XFZT, 8300, 4724, G:\Automation Projects\testriq\src\main\java\apps\mda-2.2.0-25.apk)</span>
+                <span class="method-start">28139 ms</span>
               </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.TC_01_Login</div> <!-- chronological-class-name -->
+              <div class="configuration-class after">
+                <span class="method-name">Teardown</span>
+                <span class="method-start">32635 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.TC_02_Add_To_Cart</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">configuration</span>
-                <span class="method-start">99960 ms</span>
+                <span class="method-name">configuration(94CAY0MBUV, 8400, 4725, G:\Automation Projects\testriq\src\main\java\apps\mda-2.2.0-25.apk)</span>
+                <span class="method-start">33048 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">WithLoginAddToCartAndCheckout</span>
-                <span class="method-start">107401 ms</span>
+                <span class="method-start">35293 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">WithLoginAddToCartAndCheckout</span>
+                <span class="method-start">40967 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">WithoutLoginAddToCart</span>
-                <span class="method-start">123336 ms</span>
+                <span class="method-start">51016 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">RemoveProductFromCart</span>
+                <span class="method-start">56860 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.TC_03_Checkout</div> <!-- chronological-class-name -->
+              <div class="configuration-class after">
+                <span class="method-name">Teardown</span>
+                <span class="method-start">57090 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.TC_01_Login</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">configuration(2A131FDH200HX6, 8200, 4723, G:\Automation Projects\testriq\src\main\java\apps\mda-2.2.0-25.apk)</span>
+                <span class="method-start">57469 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">LogintoTheApp</span>
+                <span class="method-start">63715 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.TC_02_Add_To_Cart</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">WithoutLoginAddToCart</span>
+                <span class="method-start">69330 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.TC_01_Login</div> <!-- chronological-class-name -->
+              <div class="configuration-class after">
+                <span class="method-name">Teardown</span>
+                <span class="method-start">75846 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.TC_02_Add_To_Cart</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">configuration(2A131FDH200HX6, 8200, 4723, G:\Automation Projects\testriq\src\main\java\apps\mda-2.2.0-25.apk)</span>
+                <span class="method-start">76234 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class after">
+                <span class="method-name">Teardown</span>
+                <span class="method-start">77883 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="test-method">
+                <span class="method-name">WithLoginAddToCartAndCheckout</span>
+                <span class="method-start">82867 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">RemoveProductFromCart</span>
-                <span class="method-start">129764 ms</span>
+                <span class="method-start">87996 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">WithoutLoginAddToCart</span>
+                <span class="method-start">99333 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">Teardown</span>
-                <span class="method-start">150396 ms</span>
+                <span class="method-start">103991 ms</span>
               </div> <!-- configuration-class after -->
+              <div class="test-method">
+                <span class="method-name">RemoveProductFromCart</span>
+                <span class="method-start">105649 ms</span>
+              </div> <!-- test-method -->
               <div class="configuration-class after">
-                <span class="method-name">teardown</span>
-                <span class="method-start">150845 ms</span>
+                <span class="method-name">Teardown</span>
+                <span class="method-start">126760 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

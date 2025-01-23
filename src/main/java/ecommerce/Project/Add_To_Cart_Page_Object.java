@@ -162,6 +162,7 @@ public class Add_To_Cart_Page_Object extends AndroidActions{
 		cardName.sendKeys(name);
 		cardNumber.click();
 		cardNumber.sendKeys(cardNum);
+		super.hideKeyboard();
 		expiryDate.click();
 		expiryDate.sendKeys(expiry);
 		securityCode.click();

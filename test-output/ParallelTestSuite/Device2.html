@@ -1,0 +1,274 @@
+<html>
+<head>
+<title>TestNG:  Device2</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Device2</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>4/0/1</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Jan 23 18:19:31 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>78 seconds (78361 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcases.TC_03_Checkout.configuration()'><b>configuration</b><br>Test class: testcases.TC_03_Checkout<br>Parameters: RZCT815XFZT, 8300, 4724, G:\Automation Projects\testriq\src\main\java\apps\mda-2.2.0-25.apk</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: UiAutomator2 Server cannot start because the local port #8300 is busy. Make sure the port you provide via &apos;systemPort&apos; capability is not occupied. This situation might often be a result of an inaccurate sessions management, e.g. old automation sessions on the same device must always be closed before starting new ones. 
+Host info: host: &apos;TESTRIQ&apos;, ip: &apos;192.168.29.64&apos;
+Build info: version: &apos;4.28.0&apos;, revision: &apos;ac342546e9&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:systemPort=8300, appium:automationName=UiAutomator2, appium:appPackage=com.saucelabs.mydemoapp.android, appium:udid=RZCT815XFZT, appium:autoGrantPermissions=true, platformName=ANDROID, appium:app=G:\Automation Projects\testriq\src\main\java\apps\mda-2.2.0-25.apk, appium:appActivity=com.saucelabs.mydemoapp.android.view.activities.SplashActivity, appium:deviceName=RZCT815XFZT}], desiredCapabilities=Capabilities {appium:app: G:\Automation Projects\test..., appium:appActivity: com.saucelabs.mydemoapp.and..., appium:appPackage: com.saucelabs.mydemoapp.and..., appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:deviceName: RZCT815XFZT, appium:systemPort: 8300, appium:udid: RZCT815XFZT, platformName: ANDROID}}]
+Capabilities {appium:app: G:\Automation Projects\test..., appium:appActivity: com.saucelabs.mydemoapp.and..., appium:appPackage: com.saucelabs.mydemoapp.and..., appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:deviceName: RZCT815XFZT, appium:systemPort: 8300, appium:udid: RZCT815XFZT, platformName: ANDROID}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:116)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:96)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:176)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:268)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:174)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:90)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:102)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:109)
+	at testcases.BaseTest.startAppiumServerAndInitializeDriver(BaseTest.java:35)
+	at testcases.TC_03_Checkout.configuration(TC_03_Checkout.java:26)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace311629297", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace311629297'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: UiAutomator2 Server cannot start because the local port #8300 is busy. Make sure the port you provide via &apos;systemPort&apos; capability is not occupied. This situation might often be a result of an inaccurate sessions management, e.g. old automation sessions on the same device must always be closed before starting new ones. 
+Host info: host: &apos;TESTRIQ&apos;, ip: &apos;192.168.29.64&apos;
+Build info: version: &apos;4.28.0&apos;, revision: &apos;ac342546e9&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:systemPort=8300, appium:automationName=UiAutomator2, appium:appPackage=com.saucelabs.mydemoapp.android, appium:udid=RZCT815XFZT, appium:autoGrantPermissions=true, platformName=ANDROID, appium:app=G:\Automation Projects\testriq\src\main\java\apps\mda-2.2.0-25.apk, appium:appActivity=com.saucelabs.mydemoapp.android.view.activities.SplashActivity, appium:deviceName=RZCT815XFZT}], desiredCapabilities=Capabilities {appium:app: G:\Automation Projects\test..., appium:appActivity: com.saucelabs.mydemoapp.and..., appium:appPackage: com.saucelabs.mydemoapp.and..., appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:deviceName: RZCT815XFZT, appium:systemPort: 8300, appium:udid: RZCT815XFZT, platformName: ANDROID}}]
+Capabilities {appium:app: G:\Automation Projects\test..., appium:appActivity: com.saucelabs.mydemoapp.and..., appium:appPackage: com.saucelabs.mydemoapp.and..., appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:deviceName: RZCT815XFZT, appium:systemPort: 8300, appium:udid: RZCT815XFZT, platformName: ANDROID}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:116)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:96)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:176)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:268)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:174)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:90)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:102)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:109)
+	at testcases.BaseTest.startAppiumServerAndInitializeDriver(BaseTest.java:35)
+	at testcases.TC_03_Checkout.configuration(TC_03_Checkout.java:26)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>5</td>
+<td>testcases.TC_03_Checkout@3fa247d1</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcases.TC_03_Checkout.Teardown()'><b>Teardown</b><br>Test class: testcases.TC_03_Checkout</td>
+<td></td>
+<td>0</td>
+<td>testcases.TC_03_Checkout@3fa247d1</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcases.TC_01_Login.LogintoTheApp()'><b>LogintoTheApp</b><br>Test class: testcases.TC_01_Login</td>
+<td></td>
+<td>12</td>
+<td>testcases.TC_01_Login@4ea5b703</td></tr>
+<tr>
+<td title='testcases.TC_02_Add_To_Cart.WithLoginAddToCartAndCheckout()'><b>WithLoginAddToCartAndCheckout</b><br>Test class: testcases.TC_02_Add_To_Cart</td>
+<td></td>
+<td>15</td>
+<td>testcases.TC_02_Add_To_Cart@2a7ed1f</td></tr>
+<tr>
+<td title='testcases.TC_02_Add_To_Cart.RemoveProductFromCart()'><b>RemoveProductFromCart</b><br>Test class: testcases.TC_02_Add_To_Cart</td>
+<td></td>
+<td>21</td>
+<td>testcases.TC_02_Add_To_Cart@2a7ed1f</td></tr>
+<tr>
+<td title='testcases.TC_02_Add_To_Cart.WithoutLoginAddToCart()'><b>WithoutLoginAddToCart</b><br>Test class: testcases.TC_02_Add_To_Cart</td>
+<td></td>
+<td>5</td>
+<td>testcases.TC_02_Add_To_Cart@2a7ed1f</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcases.TC_03_Checkout.CheckoutTest()'><b>CheckoutTest</b><br>Test class: testcases.TC_03_Checkout</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: UiAutomator2 Server cannot start because the local port #8300 is busy. Make sure the port you provide via &apos;systemPort&apos; capability is not occupied. This situation might often be a result of an inaccurate sessions management, e.g. old automation sessions on the same device must always be closed before starting new ones. 
+Host info: host: &apos;TESTRIQ&apos;, ip: &apos;192.168.29.64&apos;
+Build info: version: &apos;4.28.0&apos;, revision: &apos;ac342546e9&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:systemPort=8300, appium:automationName=UiAutomator2, appium:appPackage=com.saucelabs.mydemoapp.android, appium:udid=RZCT815XFZT, appium:autoGrantPermissions=true, platformName=ANDROID, appium:app=G:\Automation Projects\testriq\src\main\java\apps\mda-2.2.0-25.apk, appium:appActivity=com.saucelabs.mydemoapp.android.view.activities.SplashActivity, appium:deviceName=RZCT815XFZT}], desiredCapabilities=Capabilities {appium:app: G:\Automation Projects\test..., appium:appActivity: com.saucelabs.mydemoapp.and..., appium:appPackage: com.saucelabs.mydemoapp.and..., appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:deviceName: RZCT815XFZT, appium:systemPort: 8300, appium:udid: RZCT815XFZT, platformName: ANDROID}}]
+Capabilities {appium:app: G:\Automation Projects\test..., appium:appActivity: com.saucelabs.mydemoapp.and..., appium:appPackage: com.saucelabs.mydemoapp.and..., appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:deviceName: RZCT815XFZT, appium:systemPort: 8300, appium:udid: RZCT815XFZT, platformName: ANDROID}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:116)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:96)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:176)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:268)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:174)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:90)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:102)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:109)
+	at testcases.BaseTest.startAppiumServerAndInitializeDriver(BaseTest.java:35)
+	at testcases.TC_03_Checkout.configuration(TC_03_Checkout.java:26)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace824184688", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace824184688'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: UiAutomator2 Server cannot start because the local port #8300 is busy. Make sure the port you provide via &apos;systemPort&apos; capability is not occupied. This situation might often be a result of an inaccurate sessions management, e.g. old automation sessions on the same device must always be closed before starting new ones. 
+Host info: host: &apos;TESTRIQ&apos;, ip: &apos;192.168.29.64&apos;
+Build info: version: &apos;4.28.0&apos;, revision: &apos;ac342546e9&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:systemPort=8300, appium:automationName=UiAutomator2, appium:appPackage=com.saucelabs.mydemoapp.android, appium:udid=RZCT815XFZT, appium:autoGrantPermissions=true, platformName=ANDROID, appium:app=G:\Automation Projects\testriq\src\main\java\apps\mda-2.2.0-25.apk, appium:appActivity=com.saucelabs.mydemoapp.android.view.activities.SplashActivity, appium:deviceName=RZCT815XFZT}], desiredCapabilities=Capabilities {appium:app: G:\Automation Projects\test..., appium:appActivity: com.saucelabs.mydemoapp.and..., appium:appPackage: com.saucelabs.mydemoapp.and..., appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:deviceName: RZCT815XFZT, appium:systemPort: 8300, appium:udid: RZCT815XFZT, platformName: ANDROID}}]
+Capabilities {appium:app: G:\Automation Projects\test..., appium:appActivity: com.saucelabs.mydemoapp.and..., appium:appPackage: com.saucelabs.mydemoapp.and..., appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:deviceName: RZCT815XFZT, appium:systemPort: 8300, appium:udid: RZCT815XFZT, platformName: ANDROID}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:116)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:96)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:176)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:268)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:174)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:90)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:102)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:109)
+	at testcases.BaseTest.startAppiumServerAndInitializeDriver(BaseTest.java:35)
+	at testcases.TC_03_Checkout.configuration(TC_03_Checkout.java:26)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+</pre></div></td>
+<td>0</td>
+<td>testcases.TC_03_Checkout@3fa247d1</td></tr>
+</table><p>
+</body>
+</html>
