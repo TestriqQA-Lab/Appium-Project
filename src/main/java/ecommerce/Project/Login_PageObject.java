@@ -61,6 +61,7 @@ public class Login_PageObject extends AndroidActions{
 		loginButton.click();
 	}
 	
+	
 	public void logOut() {
 	mainMenu.click();
 	logoutButton.click();
