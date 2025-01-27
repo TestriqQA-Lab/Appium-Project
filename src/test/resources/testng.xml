@@ -19,7 +19,7 @@
     </test>
 
     <test name="Device2">
-        <parameter name="deviceName" value="RZCT815XFZT"/>
+        <parameter name="deviceName" value="94CAY0MBUV"/>
         <parameter name="systemPort" value="8300"/>
         <parameter name="appiumPort" value="4724"/>
         <parameter name="appPath" value="G:\Automation Projects\testriq\src\main\java\apps\mda-2.2.0-25.apk"/>
@@ -31,9 +31,33 @@
     </test>
 
  <test name="Device3">
-        <parameter name="deviceName" value="94CAY0MBUV"/>
+        <parameter name="deviceName" value="RF8N30AXDHN"/>
         <parameter name="systemPort" value="8400"/>
         <parameter name="appiumPort" value="4725"/>
+        <parameter name="appPath" value="G:\Automation Projects\testriq\src\main\java\apps\mda-2.2.0-25.apk"/>
+        <classes>
+		    <class name="testcases.TC_01_Login"/>
+      		<class name="testcases.TC_02_Add_To_Cart"/>
+            <class name="testcases.TC_03_Checkout"/>
+       </classes>
+    </test>
+
+ <test name="Device4">
+        <parameter name="deviceName" value="RZCT815XFZT"/>
+        <parameter name="systemPort" value="8500"/>
+        <parameter name="appiumPort" value="4726"/>
+        <parameter name="appPath" value="G:\Automation Projects\testriq\src\main\java\apps\mda-2.2.0-25.apk"/>
+        <classes>
+		    <class name="testcases.TC_01_Login"/>
+      		<class name="testcases.TC_02_Add_To_Cart"/>
+            <class name="testcases.TC_03_Checkout"/>
+       </classes>
+    </test>
+
+	<test name="Device5">
+        <parameter name="deviceName" value="25031FDF6001M1"/>
+        <parameter name="systemPort" value="8600"/>
+        <parameter name="appiumPort" value="4727"/>
         <parameter name="appPath" value="G:\Automation Projects\testriq\src\main\java\apps\mda-2.2.0-25.apk"/>
         <classes>
 		    <class name="testcases.TC_01_Login"/>

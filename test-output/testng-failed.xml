@@ -4,24 +4,9 @@
   <listeners>
     <listener class-name="AndroidUtils.Listeners"/>
   </listeners>
-  <test thread-count="5" parallel="tests" name="Device2(failed)">
-    <parameter name="appiumPort" value="4724"/>
-    <parameter name="deviceName" value="RZCT815XFZT"/>
-    <parameter name="appPath" value="G:\Automation Projects\testriq\src\main\java\apps\mda-2.2.0-25.apk"/>
-    <parameter name="systemPort" value="8300"/>
-    <classes>
-      <class name="testcases.TC_03_Checkout">
-        <methods>
-          <include name="Teardown"/>
-          <include name="configuration"/>
-          <include name="CheckoutTest"/>
-        </methods>
-      </class> <!-- testcases.TC_03_Checkout -->
-    </classes>
-  </test> <!-- Device2(failed) -->
   <test thread-count="5" parallel="tests" name="Device3(failed)">
     <parameter name="appiumPort" value="4725"/>
-    <parameter name="deviceName" value="94CAY0MBUV"/>
+    <parameter name="deviceName" value="RF8N30AXDHN"/>
     <parameter name="appPath" value="G:\Automation Projects\testriq\src\main\java\apps\mda-2.2.0-25.apk"/>
     <parameter name="systemPort" value="8400"/>
     <classes>
@@ -32,6 +17,13 @@
           <include name="CheckoutTest"/>
         </methods>
       </class> <!-- testcases.TC_03_Checkout -->
+      <class name="testcases.TC_01_Login">
+        <methods>
+          <include name="LogintoTheApp"/>
+          <include name="configuration"/>
+          <include name="Teardown"/>
+        </methods>
+      </class> <!-- testcases.TC_01_Login -->
       <class name="testcases.TC_02_Add_To_Cart">
         <methods>
           <include name="WithLoginAddToCartAndCheckout"/>
@@ -43,4 +35,119 @@
       </class> <!-- testcases.TC_02_Add_To_Cart -->
     </classes>
   </test> <!-- Device3(failed) -->
+  <test thread-count="5" parallel="tests" name="Device2(failed)">
+    <parameter name="appiumPort" value="4724"/>
+    <parameter name="deviceName" value="94CAY0MBUV"/>
+    <parameter name="appPath" value="G:\Automation Projects\testriq\src\main\java\apps\mda-2.2.0-25.apk"/>
+    <parameter name="systemPort" value="8300"/>
+    <classes>
+      <class name="testcases.TC_03_Checkout">
+        <methods>
+          <include name="Teardown"/>
+          <include name="configuration"/>
+          <include name="CheckoutTest"/>
+        </methods>
+      </class> <!-- testcases.TC_03_Checkout -->
+      <class name="testcases.TC_01_Login">
+        <methods>
+          <include name="LogintoTheApp"/>
+          <include name="configuration"/>
+          <include name="Teardown"/>
+        </methods>
+      </class> <!-- testcases.TC_01_Login -->
+      <class name="testcases.TC_02_Add_To_Cart">
+        <methods>
+          <include name="WithLoginAddToCartAndCheckout"/>
+          <include name="Teardown"/>
+          <include name="WithoutLoginAddToCart"/>
+          <include name="RemoveProductFromCart"/>
+          <include name="configuration"/>
+        </methods>
+      </class> <!-- testcases.TC_02_Add_To_Cart -->
+    </classes>
+  </test> <!-- Device2(failed) -->
+  <test thread-count="5" parallel="tests" name="Device5(failed)">
+    <parameter name="appiumPort" value="4727"/>
+    <parameter name="deviceName" value="25031FDF6001M1"/>
+    <parameter name="appPath" value="G:\Automation Projects\testriq\src\main\java\apps\mda-2.2.0-25.apk"/>
+    <parameter name="systemPort" value="8600"/>
+    <classes>
+      <class name="testcases.TC_03_Checkout">
+        <methods>
+          <include name="Teardown"/>
+          <include name="configuration"/>
+          <include name="CheckoutTest"/>
+        </methods>
+      </class> <!-- testcases.TC_03_Checkout -->
+      <class name="testcases.TC_01_Login">
+        <methods>
+          <include name="LogintoTheApp"/>
+          <include name="configuration"/>
+          <include name="Teardown"/>
+        </methods>
+      </class> <!-- testcases.TC_01_Login -->
+      <class name="testcases.TC_02_Add_To_Cart">
+        <methods>
+          <include name="WithLoginAddToCartAndCheckout"/>
+          <include name="Teardown"/>
+          <include name="WithoutLoginAddToCart"/>
+          <include name="RemoveProductFromCart"/>
+          <include name="configuration"/>
+        </methods>
+      </class> <!-- testcases.TC_02_Add_To_Cart -->
+    </classes>
+  </test> <!-- Device5(failed) -->
+  <test thread-count="5" parallel="tests" name="Device1(failed)">
+    <parameter name="appiumPort" value="4723"/>
+    <parameter name="deviceName" value="2A131FDH200HX6"/>
+    <parameter name="appPath" value="G:\Automation Projects\testriq\src\main\java\apps\mda-2.2.0-25.apk"/>
+    <parameter name="systemPort" value="8200"/>
+    <classes>
+      <class name="testcases.TC_03_Checkout">
+        <methods>
+          <include name="Teardown"/>
+          <include name="configuration"/>
+          <include name="CheckoutTest"/>
+        </methods>
+      </class> <!-- testcases.TC_03_Checkout -->
+      <class name="testcases.TC_01_Login">
+        <methods>
+          <include name="LogintoTheApp"/>
+          <include name="configuration"/>
+          <include name="Teardown"/>
+        </methods>
+      </class> <!-- testcases.TC_01_Login -->
+      <class name="testcases.TC_02_Add_To_Cart">
+        <methods>
+          <include name="WithLoginAddToCartAndCheckout"/>
+          <include name="Teardown"/>
+          <include name="WithoutLoginAddToCart"/>
+          <include name="RemoveProductFromCart"/>
+          <include name="configuration"/>
+        </methods>
+      </class> <!-- testcases.TC_02_Add_To_Cart -->
+    </classes>
+  </test> <!-- Device1(failed) -->
+  <test thread-count="5" parallel="tests" name="Device4(failed)">
+    <parameter name="appiumPort" value="4726"/>
+    <parameter name="deviceName" value="RZCT815XFZT"/>
+    <parameter name="appPath" value="G:\Automation Projects\testriq\src\main\java\apps\mda-2.2.0-25.apk"/>
+    <parameter name="systemPort" value="8500"/>
+    <classes>
+      <class name="testcases.TC_03_Checkout">
+        <methods>
+          <include name="Teardown"/>
+          <include name="configuration"/>
+          <include name="CheckoutTest"/>
+        </methods>
+      </class> <!-- testcases.TC_03_Checkout -->
+      <class name="testcases.TC_01_Login">
+        <methods>
+          <include name="LogintoTheApp"/>
+          <include name="configuration"/>
+          <include name="Teardown"/>
+        </methods>
+      </class> <!-- testcases.TC_01_Login -->
+    </classes>
+  </test> <!-- Device4(failed) -->
 </suite> <!-- Failed suite [ParallelTestSuite] -->
