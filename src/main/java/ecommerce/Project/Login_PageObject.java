@@ -49,7 +49,6 @@ public class Login_PageObject extends AndroidActions{
 	@AndroidFindBy(id = "android:id/button1")
 	public WebElement logoutPoup;
 	
-
 	public void login(String email, String pass) {
 		mainMenu.click();
 		logIn.click();
