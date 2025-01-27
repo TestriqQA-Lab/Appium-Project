@@ -30,7 +30,8 @@ public class BaseTest extends AppiumUtils {
         options.setAppActivity("com.saucelabs.mydemoapp.android.view.activities.SplashActivity");
         options.setCapability("autoGrantPermissions", true);
         options.setSystemPort(systemPort); // Set unique system port for each device
-
+        
+        
         // Initialize AndroidDriver
         driver = new AndroidDriver(service.getUrl(), options);
     }
