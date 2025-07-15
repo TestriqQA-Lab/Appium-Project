@@ -173,6 +173,21 @@ public class Add_To_Cart_Page_Object extends AndroidActions{
 		
 	}
 	
+	public void AddCard(String name, String cardNum, String expiry, String security) {
+		cardName.click();
+		cardName.sendKeys(name);
+		cardNumber.click();
+		cardNumber.sendKeys(cardNum);
+		super.hideKeyboard();
+		expiryDate.click();
+		expiryDate.sendKeys(expiry);
+		securityCode.click();
+		securityCode.sendKeys(security);
+		super.hideKeyboard();
+		reviewOrder.click();
+		placeOrder.click();	
+	}
+	
 	public boolean verifyMyCartPage() {
 		boolean flag = true;
 		if(!myCart.isDisplayed()) {
